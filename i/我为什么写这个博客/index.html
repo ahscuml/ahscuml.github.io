@@ -12,7 +12,7 @@
     
     <title>
         
-            分类: Life | 
+            写博客的原因 | 
         
         ahscuml
     </title>
@@ -67,15 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://ahscuml.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="分类: Life | ahscuml">
+    <meta property="og:title" content="写博客的原因 | ahscuml">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="Stay hungry, stay foolish.">
     
 
     
+        <meta property="article:published_time" content="3月 19, 2018" />
+        <meta property="article:modified_time" content="7月 24, 2018" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="分类: Life | ahscuml">
+    <meta name="twitter:title" content="写博客的原因 | ahscuml">
     <meta name="twitter:description" content="Stay hungry, stay foolish.">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -83,13 +86,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://ahscuml.github.io/categories/Life/index.html" />
+        <link rel="canonical" href="https://ahscuml.github.io/i/我为什么写这个博客/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ahscuml",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "ahscuml",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "Things change, roll with it!"
+    },
+    "headline": "写博客的原因",
+    "url": "https://ahscuml.github.io/i/我为什么写这个博客/index.html",
+    "datePublished": "3月 19, 2018",
+    "dateModified": "7月 24, 2018",
+    "description": "Stay hungry, stay foolish.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ahscuml.github.io"
+    }
+}
+</script>
 
 
     
@@ -268,95 +301,231 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
     
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
         
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+    
+
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="我为什么写这个博客/why.jpg">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(_posts/我为什么写这个博客/why.jpg)">
+    
+            <p class="article-headline-p">
+                写博客的原因
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ahscuml</strong>
+        <span>3月 19, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/我为什么写这个博客/">写博客的原因</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
         
-            　　
-　　写博客这个事情我已经想了很久了，记得刚上大学的时候我就想着要写自己的博客，最开始还是想记录自己的生活，写一写随笔，因为我受高...
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
         
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/我为什么写这个博客/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="ahscuml's avatar">
-            </div>
-            <div>
-                <strong>ahscuml</strong>
-                <span>7月 24, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/Life/">Life</a>
-            </span>
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=写博客的原因&url=https://ahscuml.github.io/i/我为什么写这个博客/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=写博客的原因&url=https://ahscuml.github.io/i/我为什么写这个博客/index.html&via=ahscuml" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ahscuml.github.io/i/我为什么写这个博客/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ahscuml.github.io/i/我为什么写这个博客/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
 </div>
 
-            
-            
-        
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
+        <p>　　</p>
+<p>　　写博客这个事情我已经想了很久了，记得刚上大学的时候我就想着要写自己的博客，最开始还是想记录自己的生活，写一写随笔，因为我受高中老师的影响 ，平时也会写一写随笔的，但是由于自己不太想把自己的生活和自己的想法暴露给别人，所以自己一直没有写博客，再到后来，自己开始学习编程的知识，学习一些自己感兴趣的内容，写博客的想法又一次涌上心头，这一次不是分享自己的生活，这一次我想分享自己的学习成果。虽然说是成果，其实吧，更加像是自己对自己一种激励，或者说是自己对自己的一种监督。有了一个地方来记录自己的学习过程，并且可以被其他人看到，这对于自己来说是一个很好的鼓励，鼓励自己写一写东西。我还是一个很在意别人看法的人，所以，我可能会想着我自己有的博客，我一定要维护好，毕竟别人还会看见。让其他人觉得我很厉害。还有这也是我自己的一份记录。以前学习，我会画在书上，我会写在纸上，写上我对问题的思考，写上我的总结，但是最终会找不见，但是这次不一样了，有了自己的一块地方，我就可以把我的内容传到我自己的GitHub上，不仅仅别人可<br>以监督我写的内容，可以和别人进行讨论，同时，我自己还可以对自己学过的知识进行总结，进行记录。毕竟学过不一定会，总结，重复，才会让自己更强。督促我写这个博客还有另外一个因素，那就是我觉得很酷。我对一切很酷的东西都很感兴趣，像高中沉迷Lumia920，当时把照片贴在床板上，哈哈，督促我努力学习。博客也让我感觉很酷，普通的博客并不是，酷同时也有美的意思，就是我很喜欢的那种美，看到美的东西总让人很兴奋。这个博客还是自己搭建的，也让自己很有成就感。<br>　　当然这不是最终目标，我最终的目标是自己完全亲手搭建一个网站，拥有自己的域名，自己来维护，创造自己觉得美的东西，这让自己感觉很有动力。当然这需要很多的知识，虽然现在我还不具有这些知识，但是我会不断学习的，不断进步，让自己变得更强。<br>　　我始终喜欢那些很厉害的人。</p>
 
     
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
-</script>
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/我为什么写这个博客/我为什么写这个博客/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/为什么使用markdown/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -436,7 +605,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">5</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">6</span></a>
             </ul>
         </li>
         
@@ -454,7 +623,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Algorithm-DataStructure/">Algorithm&DataStructure<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Life/">Life<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Life/">Life<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -478,7 +647,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">8</span>
+                <span class="sidebar-badge">7</span>
             </a>
         </li>
         

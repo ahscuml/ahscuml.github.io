@@ -12,7 +12,7 @@
     
     <title>
         
-            Clone方法——深复制与浅复制 | 
+            动态规划 | 
         
         ahscuml
     </title>
@@ -67,18 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://ahscuml.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Clone方法——深复制与浅复制 | ahscuml">
+    <meta property="og:title" content="动态规划 | ahscuml">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="Stay hungry, stay foolish.">
     
 
     
-        <meta property="article:published_time" content="3月 18, 2018" />
-        <meta property="article:modified_time" content="7月 18, 2018" />
+        <meta property="article:published_time" content="7月 24, 2018" />
+        <meta property="article:modified_time" content="7月 24, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Clone方法——深复制与浅复制 | ahscuml">
+    <meta name="twitter:title" content="动态规划 | ahscuml">
     <meta name="twitter:description" content="Stay hungry, stay foolish.">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -86,7 +86,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://ahscuml.github.io/clone方法——深复制与浅复制/index.html" />
+        <link rel="canonical" href="https://ahscuml.github.io/动态规划/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -112,10 +112,10 @@
         },
         "description": "Things change, roll with it!"
     },
-    "headline": "Clone方法——深复制与浅复制",
-    "url": "https://ahscuml.github.io/clone方法——深复制与浅复制/index.html",
-    "datePublished": "3月 18, 2018",
-    "dateModified": "7月 18, 2018",
+    "headline": "动态规划",
+    "url": "https://ahscuml.github.io/动态规划/index.html",
+    "datePublished": "7月 24, 2018",
+    "dateModified": "7月 24, 2018",
     "description": "Stay hungry, stay foolish.",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -328,7 +328,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浅复制"><span class="post-toc-number">1.</span> <span class="post-toc-text">浅复制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#深复制"><span class="post-toc-number">2.</span> <span class="post-toc-text">深复制</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#动态规划-Dynamic-Programming"><span class="post-toc-number">1.</span> <span class="post-toc-text">动态规划 (Dynamic Programming)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本原理"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">基本原理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#另一种理解"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">另一种理解</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#动态规划计算方法"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">动态规划计算方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#贪心算法与动态规划"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">贪心算法与动态规划</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#习题"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">习题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#习题1-小朋友过桥问题"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">习题1 小朋友过桥问题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#习题2-最长单调子序列问题"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">习题2 最长单调子序列问题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#习题2-回文串问题（区间模型）"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">习题2 回文串问题（区间模型）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#习题3-背包问题（背包模型）"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">习题3 背包问题（背包模型）</span></a></li></ol></li></ol></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -353,20 +353,11 @@
                 
     <!-- Paradox Post Header -->
     
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
-        
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(动态规划/DynamicPrograming.png)">
     
             <p class="article-headline-p">
-                Clone方法——深复制与浅复制
+                动态规划
             </p>
         </div>
 
@@ -385,7 +376,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>ahscuml</strong>
-        <span>3月 18, 2018</span>
+        <span>7月 24, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -436,7 +427,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Clone方法——深复制与浅复制&url=https://ahscuml.github.io/clone方法——深复制与浅复制/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=动态规划&url=https://ahscuml.github.io/动态规划/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -445,7 +436,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Clone方法——深复制与浅复制&url=https://ahscuml.github.io/clone方法——深复制与浅复制/index.html&via=ahscuml" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=动态规划&url=https://ahscuml.github.io/动态规划/index.html&via=ahscuml" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -454,7 +445,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ahscuml.github.io/clone方法——深复制与浅复制/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ahscuml.github.io/动态规划/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -463,7 +454,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://ahscuml.github.io/clone方法——深复制与浅复制/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ahscuml.github.io/动态规划/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -487,74 +478,57 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>如果使用clone方法必须实现Cloneable方法。<br>在复制过程中存在深复制与浅复制。浅复制仅仅复制基本类型，对于引用类型则没有完全复制，仅仅是引用而已。深复制则不同，全部复制。</p>
-<h2 id="浅复制"><a href="#浅复制" class="headerlink" title="浅复制"></a>浅复制</h2><pre><code>public class CloneTest {
-    public static void main(String[] args) throws CloneNotSupportedException {
-    Father father = new Father(50,&quot;Father&quot;);
-    Father father1 = (Father) father.clone();
-    father1.setAge(10);
-    father1.setName(&quot;Father1&quot;);
-    System.out.println(father + &quot; &quot; +father.getAge() + &quot; &quot; + father.getName());
-    System.out.println(father1 + &quot; &quot; +father1.getAge() + &quot; &quot; + father1.getName());
-  }
-}
-</code></pre><p>输出结果是  </p>
-<pre><code>Clone.Father@677327b6 50 Father
-Clone.Father@14ae5a5 10 Father1
-</code></pre><p>事实证明，使用clone进行的拷贝对于基本数据类型是进行新建空间复制过去的。</p>
-<pre><code>public class Father implements Cloneable {
-    private String name;
-    private int age;
-    private ID id;    
-    public Father(ID id,String name,int age){
-        this.id = id;
-        this.name = name;
-        this.age = age;
-    }    
-    public void setId(ID id){
-        this.id = id;
-    }    
-    public ID getId() {
-        return id;
-    }
-    @Override
-        public Object clone() throws  CloneNotSupportedException{
-        Father father = (Father)super.clone();
-        return father;
-        }
-}
-
-public class ID {
-    private int ID;    
-    public void setID(int ID){
-        this.ID = ID;
-    }    
-    public int getID(){
-        return ID;
-    }
-}
-
-public class CloneTest {
-    public static void main(String[] args) throws CloneNotSupportedException {
-        ID id = new ID();
-        id.setID(1);
-        Father father = new Father(id,&quot;Father&quot;,40);
-        Father father1 = (Father)father.clone();
-        System.out.println(father.getId().getID());
-        System.out.println(father1.getId().getID());
-        id.setID(2);
-        System.out.println(father.getId().getID());
-        System.out.println(father1.getId().getID());
-
-    }
-}
-</code></pre><p>输出结果为：</p>
-<pre><code>1
-1
-2
-2
-</code></pre><p>可见修改一个ID，两个对象都改变了ID，所以可以发现，两个ID使用的都是同一块地址，所以修改ID才会造成两个对象同时改变地址。</p>
-<h2 id="深复制"><a href="#深复制" class="headerlink" title="深复制"></a>深复制</h2><p>深复制的实现是通过将浅复制实现cloneable  </p>
+        <h1 id="动态规划-Dynamic-Programming"><a href="#动态规划-Dynamic-Programming" class="headerlink" title="动态规划 (Dynamic Programming)"></a><a href="https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92" target="_blank" rel="noopener">动态规划</a> (Dynamic Programming)</h1><h2 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h2><p>动态规划算法并非适用于所有的最优化问题(还有其他算法，例如贪心算法),适用于动态规划求解的问题应具备两个基本要素:<strong>最优子结构性质</strong>和<strong>子问题重叠性质</strong>。<br>动态规划的本质是对<strong>问题状态</strong>的定义和问题<strong>状态转移方程</strong>的定义<br>动态规划是通过拆分问题，定义问题状态和状态之间的关系，使得问题能够以递推（或者说分治）的方式去解决。</p>
+<ul>
+<li><strong>子问题重叠性质</strong>：子问题重叠性质是指在用递归算法自顶向下对问题进行求解时，每次产生的子问题并不总是新问题，有些子问题会被重复计算多次。动态规划算法正是利用了这种子问题的重叠性质，对每一个子问题只计算一次，然后将其计算结果保存在一个表格中，当再次需要计算已经计算过的子问题时，只是在表格中简单地查看一下结果，从而获得较高的效率。</li>
+<li><p><strong>无后效性</strong>:如果在某个阶段上过程的状态已知，则从此阶段以后过程的发展变化仅与此阶段的状态有关，而与过程在此阶段以前的阶段所经历过的状态无关。</p>
+</li>
+<li><p><strong>最优子结构性质</strong>：问题的最优解由相关子问题的最优解组合而成，而这些子问题可以独立求解。<br>如果问题的最优解所包含的子问题的解也是最优的，我们就称该问题具有最优子结构性质（即满足最优化原理）<br>最优子结构性质,通俗地讲就是问题的最优解包含其子问题的最优解。也就是说,如果把问题的最优解分解(比如划分为两个或者多个部分,或者删除第一个或者最后一个分量),得到一个子解,那么这个子解是特定子问题的最优解。最优子结构性质隐含了问题最优解和子问题最优解之间的一种递推关系。它是动态规划的基础,保障了问题的最优解可以由子问题的最优解构造得到,即得到动态规划算法的递推方程。如果一个问题不具备该性质,则不可能用动态规划方法来求解。在分析问题的最优子结构性质时,人们一般采用反证法:首先假设由问题最优解S导出的子问题的解不是最优的,然后再推导在这个假设下可构造出比S更好的解S’,从而得到矛盾。<br>分治算法求解问题时,每次产生的子问题并不总是新问题,有些子问题重复出现,这种性质称为子问题重叠性质。<br>在动态规划算法中,对于重复出现的子问题,只是在第一次遇到时执行求解过程,然后把求解结果保存在一个表格(可能是高维表格)中,再遇到这个子问题时,直接从表格中引用答案,从而避免重复计算,达到提高效率的目标。<br>需要提醒的是,子问题重叠性质不是动态规划适用的必要条件,但是如果该性质不满足时,动态规划方法与其他方法相比就不具备优势。</p>
+</li>
+</ul>
+<hr>
+<h3 id="另一种理解"><a href="#另一种理解" class="headerlink" title="另一种理解"></a>另一种理解</h3><blockquote>
+<ul>
+<li>每个阶段只有一个状态-&gt;<strong>递推</strong>；  </li>
+<li>每个阶段的最优状态都是由上一个阶段的最优状态得到的-&gt;<strong>贪心</strong>；  </li>
+<li>每个阶段的最优状态是由之前所有阶段的状态的组合得到的-&gt;<strong>搜索</strong>；  </li>
+<li>每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到而不管之前这个状态是如何得到的-&gt;<strong>动态规划</strong>。   </li>
+</ul>
+</blockquote>
+<p>每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到这个性质叫做<strong>最优子结构</strong>；<br>而不管之前这个状态是如何得到的这个性质叫做<strong>无后效性</strong>。</p>
+<hr>
+<h2 id="动态规划计算方法"><a href="#动态规划计算方法" class="headerlink" title="动态规划计算方法"></a>动态规划计算方法</h2><ul>
+<li>递归  </li>
+<li>自顶向下的备忘录法（不一定最优）<br>从上开始，将已经计算过的内容存储起来</li>
+<li>自底向上<br>从最初的，最底层的内容开始，从小计算到大</li>
+</ul>
+<p>动态规划算法设计步骤<br>动态规划算法适合用于求解最优化问题,通常可按下列步骤来设计动态规划算法:</p>
+<blockquote>
+<ol>
+<li>分析最优子结构性质;</li>
+<li>确定状态表示和状态递推方程,递归地定义最优值;</li>
+<li>确定状态转移顺序,以自底向上的方式计算出最优值;</li>
+<li>根据计算最优值时得到的信息,构造最优解。</li>
+</ol>
+</blockquote>
+<p>第(1)步是基础,也是关键。在分析最优子结构性质时,子解分解和子解对应的子问题描述是关键。本书将介绍两种子解分解方法:基于划分的方法和基于减一的方法。在第一种方法中,问题的最优解依据问题性质划分成两个或者多个子解,但是其划分位置无法事先确定;在第二种方法中,问题的最优解依据问题性质缩减规模,比如减去最优解的第一个分量,或者最后一个分量,得到规模少1个单位的子解。得到子解后,分析和描述该子解对应的子问题,如果能证明该子解是对应子问题的最优解,则该问题满足最优子结构性质,转入第(2)步;否则,该问题不能用动态规划求解。</p>
+<p>第(2)步是动态规划算法的核心,它是最优解的规划过程。状态表示本质上就是子问题的表示,形如f(x1,…,xk),其中x1,…,xk 是描述子问题的参数列表,每一个参数都需要定义其取值范围;f(·)的值域则体现问题的求解目标,一般地,f(·)直接定义为待求解问题的目标值。需要注意的是,对于有些问题来说,f(·)如果直接定义为原问题目标值,可能最优子结构性质不成立。此时,f(·)往往定义为某个中间目标值,比如最大上升子序列问题。在算法实现时,状态f(x1,…,xk)一般用一个k 维的表格存储,动态规划过程就是表格操作过程。</p>
+<p>第(3)步体现了动态规划算法的执行过程。通俗地讲,动态规划是一个由易至难的求解过程:先求解最简单的子问题的解,然后利用简单子问题的解构造复杂一些的子问题的解,直至求解原问题的解。</p>
+<p>第(4)步是可选步骤,只有问题要求构造最优解时才需要。</p>
+<hr>
+<h3 id="贪心算法与动态规划"><a href="#贪心算法与动态规划" class="headerlink" title="贪心算法与动态规划"></a><a href="https://blog.csdn.net/jarvischu/article/details/6056387" target="_blank" rel="noopener">贪心算法与动态规划</a></h3><p><del>自己的理解：贪心就是一直选最优最终就是最优的。动态规划是每个小问题做最优，不是从最初选最优就是最优的。</del></p>
+<p>求最优解的问题，从根本上说是一种对解空间的遍历。最直接的暴力分析容易得到，最优解的解空间通常都是以指数阶增长，因此暴力穷举都是不可行的。<br>最优解问题大部分都可以拆分成一个个的子问题，把解空间的遍历视作对子问题树的遍历，则以某种形式对树整个的遍历一遍就可以求出最优解，如上面的分析，这是不可行的。<br>贪心和动态规划本质上是对子问题树的一种修剪。两种算法要求问题都具有的一个性质就是“子问题最优性”。即，组成最优解的每一个子问题的解，对于这个子问题本身肯定也是最优的。如果以自顶向下的方向看问题树（原问题作根），则，我们每次只需要向下遍历代表最优解的子树就可以保证会得到整体的最优解。形象一点说，可以简单的用一个值（最优值）代表整个子树，而不用去求出这个子树所可能代表的所有值。<br>动态规划方法代表了这一类问题的一般解法。我们自底向上（从叶子向根）构造子问题的解，对每一个子树的根，求出下面每一个叶子的值，并且以其中的最优值作为自身的值，其它的值舍弃。动态规划的代价就取决于可选择的数目（树的叉数）和子问题的的数目（树的节点数，或者是树的高度？）。<br>贪心算法是动态规划方法的一个特例。贪心特在，可以证明，每一个子树的根的值不取决于下面叶子的值，而只取决于当前问题的状况。换句话说，不需要知道一个节点所有子树的情况，就可以求出这个节点的值。通常这个值都是对于当前的问题情况下，显而易见的“最优”情况。因此用“贪心”来描述这个算法的本质。由于贪心算法的这个特性，它对解空间树的遍历不需要自底向上，而只需要自根开始，选择最优的路，一直走到底就可以了。这样，与动态规划相比，它的代价只取决于子问题的数目，而选择数目总为1。</p>
+<hr>
+<h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a><a href="http://www.cppblog.com/menjitianya/archive/2015/10/23/212084.html" target="_blank" rel="noopener">习题</a></h2><p><strong>线性模型:指状态的排布是呈线性的</strong></p>
+<h3 id="习题1-小朋友过桥问题"><a href="#习题1-小朋友过桥问题" class="headerlink" title="习题1 小朋友过桥问题"></a>习题1 小朋友过桥问题</h3><p>在一个夜黑风高的晚上，有n（n &lt;= 50）个小朋友在桥的这边，现在他们需要过桥，但是由于桥很窄，每次只允许不大于两人通过，他们只有一个手电筒，所以每次过桥的两个人需要把手电筒带回来，i号小朋友过桥的时间为T[i]，两个人过桥的总时间为二者中时间长者。问所有小朋友过桥的总时间最短是多少。</p>
+<blockquote>
+<p>我们先将所有人按花费时间递增进行排序，假设前i个人过河花费的最少时间为opt[i]，那么考虑前i-1个人过河的情况，即河这边还有1个人，河那边有i-1个人，并且这时候手电筒肯定在对岸，所以opt[i] = opt[i-1] + a[1] + a[i] (让花费时间最少的人把手电筒送过来，然后和第i个人一起过河)<br>如果河这边还有两个人，一个是第i号，另外一个无所谓，河那边有i-2个人，并且手电筒肯定在对岸，所以<br>opt[i] = opt[i-2] + a[1] + a[i] + 2*a[2] (让花费时间最少的人把电筒送过来，然后第i个人和另外一个人一起过河，由于花费时间最少的人在这边，所以下一次送手电筒过来的一定是花费次少的，送过来后花费最少的和花费次少的一起过河，解决问题)<br>所以 opt[i] = min{opt[i-1] + a[1] + a[i] , opt[i-2] + a[1] + a[i] + 2*a[2] }</p>
+</blockquote>
+<h3 id="习题2-最长单调子序列问题"><a href="#习题2-最长单调子序列问题" class="headerlink" title="习题2 最长单调子序列问题"></a>习题2 最长单调子序列问题</h3><p>给定一个长度为n(1 &lt;= n &lt;= 1000)的整数序列a[i]，求它的一个子序列(子序列即在原序列任意位置删除0或多个元素后的序列)，满足如下条件：<br>      1、该序列单调递增；<br>      2、在所有满足条件1的序列中长度是最长的；</p>
+<blockquote>
+</blockquote>
+<h3 id="习题2-回文串问题（区间模型）"><a href="#习题2-回文串问题（区间模型）" class="headerlink" title="习题2 回文串问题（区间模型）"></a>习题2 回文串问题（区间模型）</h3><p>给定一个长度为n（n &lt;= 1000）的字符串A，求插入最少多少个字符使得它变成一个回文串。</p>
+<h3 id="习题3-背包问题（背包模型）"><a href="#习题3-背包问题（背包模型）" class="headerlink" title="习题3 背包问题（背包模型）"></a>习题3 背包问题（背包模型）</h3><p>有N种物品（每种物品1件）和一个容量为V的背包。放入第 i 种物品耗费的空间是Ci，得到的价值是Wi。求解将哪些物品装入背包可使价值总和最大。f[i][v]表示前i种物品恰好放入一个容量为v的背包可以获得的最大价值。决策为第i个物品在前i-1个物品放置完毕后，是选择放还是不放，状态转移方程为：</p>
 
     
 
@@ -574,19 +548,19 @@ public class CloneTest {
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/Java强制类型转换/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/排序算法/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
@@ -672,7 +646,7 @@ public class CloneTest {
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">6</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">5</span></a>
             </ul>
         </li>
         
@@ -690,7 +664,7 @@ public class CloneTest {
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Life/">Life<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Algorithm-DataStructure/">Algorithm&DataStructure<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Life/">Life<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -714,7 +688,7 @@ public class CloneTest {
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">6</span>
+                <span class="sidebar-badge">8</span>
             </a>
         </li>
         

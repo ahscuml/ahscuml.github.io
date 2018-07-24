@@ -12,7 +12,7 @@
     
     <title>
         
-            分类: Life | 
+            Clone方法——深复制与浅复制 | 
         
         ahscuml
     </title>
@@ -67,15 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://ahscuml.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="分类: Life | ahscuml">
+    <meta property="og:title" content="Clone方法——深复制与浅复制 | ahscuml">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="Stay hungry, stay foolish.">
     
 
     
+        <meta property="article:published_time" content="3月 18, 2018" />
+        <meta property="article:modified_time" content="7月 18, 2018" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="分类: Life | ahscuml">
+    <meta name="twitter:title" content="Clone方法——深复制与浅复制 | ahscuml">
     <meta name="twitter:description" content="Stay hungry, stay foolish.">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -83,13 +86,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://ahscuml.github.io/categories/Life/index.html" />
+        <link rel="canonical" href="https://ahscuml.github.io/clone方法—深复制与浅复制/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ahscuml",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "ahscuml",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "Things change, roll with it!"
+    },
+    "headline": "Clone方法——深复制与浅复制",
+    "url": "https://ahscuml.github.io/clone方法—深复制与浅复制/index.html",
+    "datePublished": "3月 18, 2018",
+    "dateModified": "7月 18, 2018",
+    "description": "Stay hungry, stay foolish.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ahscuml.github.io"
+    }
+}
+</script>
 
 
     
@@ -268,95 +301,298 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
-
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="我为什么写这个博客/why.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/我为什么写这个博客/">写博客的原因</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            　　
-　　写博客这个事情我已经想了很久了，记得刚上大学的时候我就想着要写自己的博客，最开始还是想记录自己的生活，写一写随笔，因为我受高...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/我为什么写这个博客/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="ahscuml's avatar">
-            </div>
-            <div>
-                <strong>ahscuml</strong>
-                <span>7月 24, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/Life/">Life</a>
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
             </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
+        </a>
     </div>
-</div>
+    -->
 
-            
-            
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浅复制"><span class="post-toc-number">1.</span> <span class="post-toc-text">浅复制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#深复制"><span class="post-toc-number">2.</span> <span class="post-toc-text">深复制</span></a></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+    
+
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
         
-    
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Clone方法——深复制与浅复制
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ahscuml</strong>
+        <span>3月 18, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Clone方法——深复制与浅复制&url=https://ahscuml.github.io/clone方法—深复制与浅复制/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Clone方法——深复制与浅复制&url=https://ahscuml.github.io/clone方法—深复制与浅复制/index.html&via=ahscuml" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ahscuml.github.io/clone方法—深复制与浅复制/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ahscuml.github.io/clone方法—深复制与浅复制/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>如果使用clone方法必须实现Cloneable方法。<br>在复制过程中存在深复制与浅复制。浅复制仅仅复制基本类型，对于引用类型则没有完全复制，仅仅是引用而已。深复制则不同，全部复制。</p>
+<h2 id="浅复制"><a href="#浅复制" class="headerlink" title="浅复制"></a>浅复制</h2><pre><code>public class CloneTest {
+    public static void main(String[] args) throws CloneNotSupportedException {
+    Father father = new Father(50,&quot;Father&quot;);
+    Father father1 = (Father) father.clone();
+    father1.setAge(10);
+    father1.setName(&quot;Father1&quot;);
+    System.out.println(father + &quot; &quot; +father.getAge() + &quot; &quot; + father.getName());
+    System.out.println(father1 + &quot; &quot; +father1.getAge() + &quot; &quot; + father1.getName());
+  }
+}
+</code></pre><p>输出结果是  </p>
+<pre><code>Clone.Father@677327b6 50 Father
+Clone.Father@14ae5a5 10 Father1
+</code></pre><p>事实证明，使用clone进行的拷贝对于基本数据类型是进行新建空间复制过去的。</p>
+<pre><code>public class Father implements Cloneable {
+    private String name;
+    private int age;
+    private ID id;    
+    public Father(ID id,String name,int age){
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }    
+    public void setId(ID id){
+        this.id = id;
+    }    
+    public ID getId() {
+        return id;
+    }
+    @Override
+        public Object clone() throws  CloneNotSupportedException{
+        Father father = (Father)super.clone();
+        return father;
+        }
+}
+
+public class ID {
+    private int ID;    
+    public void setID(int ID){
+        this.ID = ID;
+    }    
+    public int getID(){
+        return ID;
+    }
+}
+
+public class CloneTest {
+    public static void main(String[] args) throws CloneNotSupportedException {
+        ID id = new ID();
+        id.setID(1);
+        Father father = new Father(id,&quot;Father&quot;,40);
+        Father father1 = (Father)father.clone();
+        System.out.println(father.getId().getID());
+        System.out.println(father1.getId().getID());
+        id.setID(2);
+        System.out.println(father.getId().getID());
+        System.out.println(father1.getId().getID());
+
+    }
+}
+</code></pre><p>输出结果为：</p>
+<pre><code>1
+1
+2
+2
+</code></pre><p>可见修改一个ID，两个对象都改变了ID，所以可以发现，两个ID使用的都是同一块地址，所以修改ID才会造成两个对象同时改变地址。</p>
+<h2 id="深复制"><a href="#深复制" class="headerlink" title="深复制"></a>深复制</h2><p>深复制的实现是通过将浅复制实现cloneable  </p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/Java强制类型转换/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
