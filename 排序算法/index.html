@@ -5,8 +5,41 @@
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.4.0 -->
-    <script>window.materialVersion = "1.4.0"</script>
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Title -->
     
@@ -17,115 +50,18 @@
         ahscuml
     </title>
 
-    <!-- dns prefetch -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    
-    
-    
-    
-    
-    
-    
-        <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
-    
-    
-    
-    
-
-    <!-- Meta & Info -->
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="theme-color" content="#0097A7">
-    <meta name="author" content="ahscuml">
-    <meta name="description" itemprop="description" content="Stay hungry, stay foolish.">
-    <meta name="keywords" content="">
-
-    <!-- Site Verification -->
-    
-    
-
     <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" sizes="192x192" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
+    <link rel="icon shortcut" type="image/ico" href="http://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg">
+    <link rel="icon" href="http://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg">
 
-    <!--iOS -->
-    <meta name="apple-mobile-web-app-title" content="Title">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="480">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="基于网络课程和《数据结构与算法分析——Java语言描述》，基本排序算法的讲解，以及Java代码实现。">
+    <meta name="keywords" content="Code,算法,数据结构,排序">
+    <meta name="theme-color" content="#0097A7">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="ahscuml">
-
-    <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://ahscuml.github.io">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="排序算法 | ahscuml">
-    <meta property="og:image" content="/img/favicon.png" />
-    <meta property="og:description" content="Stay hungry, stay foolish.">
-    
-
-    
-        <meta property="article:published_time" content="7月 24, 2018" />
-        <meta property="article:modified_time" content="7月 24, 2018" />
-    
-
-    <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="排序算法 | ahscuml">
-    <meta name="twitter:description" content="Stay hungry, stay foolish.">
-    <meta name="twitter:image" content="/img/favicon.png">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://ahscuml.github.io" />
-
-    <!-- Add canonical link for SEO -->
-    
-        <link rel="canonical" href="https://ahscuml.github.io/排序算法/index.html" />
-    
-
-    <!-- Structured-data for SEO -->
-    
-        
-
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "publisher": {
-        "@type": "Organization",
-        "name": "ahscuml",
-        "logo": "/img/favicon.png"
-    },
-    "author": {
-        "@type": "Person",
-        "name": "ahscuml",
-        "image": {
-            "@type": "ImageObject",
-            "url": "/img/favicon.png"
-        },
-        "description": "Things change, roll with it!"
-    },
-    "headline": "排序算法",
-    "url": "https://ahscuml.github.io/排序算法/index.html",
-    "datePublished": "7月 24, 2018",
-    "dateModified": "7月 24, 2018",
-    "description": "Stay hungry, stay foolish.",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://ahscuml.github.io"
-    }
-}
-</script>
-
-
-    
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -136,43 +72,33 @@
     <![endif]-->
 
     <!-- Import lsloader -->
-    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+materialVersion+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(data&&data.indexOf(versionString)===-1){lsloader.removeLS(key)}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload){cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}code=code.split(versionString)[1];if(/\.js?.+$/.test(versionNumber)){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload)}};lsloader.requestResource=function(name,path,cssonload){var that=this;if(/\.js?.+$/.test(path)){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else if(/\.css?.+$/.test(path)){this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
 
-    <!-- Import CSS & jQuery -->
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
     
-        <style id="css/material.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/material.min.css","/css/material.min.css?fJTiM/K1J3dWIruo3pxtAw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
-        <style id="css/style.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/style.min.css","/css/style.min.css?oCSEO3ST+aEypEwttTDI9g==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
-        
-        
-            <style>
-    
-    
-    
-    
-    
-    .footer-sns-instagram {
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgY2xhc3M9Imljb24iIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGQ9Ik0xNDAuNiA3OGMtOS44IDIuMi0yOC40IDEzLjgtMzguNiAyNC0xMC42IDEwLjgtMjEuNiAyOC44LTI0LjIgMzkuNC0yLjYgMTEuNC0yLjQgNzE0LjguNCA3MjUuMiA1LjIgMjAuNCAyOSA0Ni4yIDUzLjIgNTcuNiA4LjIgMy44IDE1LjQgMy44IDM3MC42IDMuOCAzNTEuOCAwIDM2Mi44LS4yIDM3MS0zLjggMjEtOS4yIDM4LjgtMjcgNTAtNDkuMmw1LTEwLjItLjQtMzYzLjgtLjYtMzY0LTQuNC04Yy0xMC44LTE5LjYtMTgtMjguMi0zMi42LTM4LjQtOS4yLTYuMi0xOC44LTExLjItMjQuNi0xMi40LTExLjItMi42LTcxNC40LTIuOC03MjQuOC0uMnpNNjYyIDIwMi44YzEyLjYgMi44IDYwLjIgMjIuMiA2OC40IDI4IDQuNCAzIDMwLjIgMzEuNCAzOSA0Mi42IDIuOCAzLjYgOS42IDE5LjQgMTUuMiAzNWwxMCAyOC42LjggMTQ2Yy42IDEwNi40LjQgMTQ5LjItMS40IDE1Ny44LTEuMiA2LjYtNiAyMi4yLTEwLjQgMzQuNi05LjggMjcuOC0yMyA0Ni42LTQ4LjIgNjguOC0yMi4yIDE5LjQtMzYuOCAyNi44LTYxLjQgMzAuOC0xMC40IDEuNi0yMi42IDQtMjcgNS4yLTE1IDMuOC0xNDAuNiA2LjItMjEzLjQgNC0zNy44LTEuMi03My0zLTc4LjYtNC01LjQtMS4yLTE2LjItMi44LTIzLjgtNC0yNi44LTQtNjguOC0zMy42LTg5LjgtNjMuOC0xMC4yLTE0LjgtMTktMzYuMi0yNy42LTY4LjQtMy4yLTEyLTMtMjkyLjQuMi0zMDcuMiA0LjYtMjEuMiAxNi42LTUzIDIzLjYtNjMuMiA0LTUuOCAxNS0xOC40IDI0LjQtMjcuOCAxNC0xNC4yIDIwLjQtMTkgMzUuOC0yNi44IDI3LTEzLjQgNDIuOC0xNyA4NC4yLTE5IDU3LjItMi44IDI2NC40LS42IDI4MCAyLjh6Ii8+PHBhdGggZD0iTTM1NiAyNjIuMmMtMi44IDEtMTEuMiA0LjItMTguNiA3LjItMTIuNCA0LjYtMzUuNCAyMS00Mi44IDMwLjYtNi4yIDgtMjEgNDcuOC0yMi44IDYxLS44IDcuNi0xLjQgNzAuMi0xIDEzOSAuNiAxMDguNiAxLjIgMTI2LjQgNCAxMzUuNCA0LjQgMTMuOCAxOC42IDQ0LjYgMjIuOCA0OS40IDQuNCA0LjggMzAuMiAyNCAzNy42IDI3LjggMTMgNi42IDQ4IDguNCAxNjcuOCA4LjQgMTE1LjIgMCAxNTAuOC0xLjYgMTY2LTcuNCA2LjYtMi40IDMyLjgtMjEuNCAzOS4yLTI4LjIgNy42LTguMiAyMy44LTQ0IDI2LTU3LjYgMS4yLTcuOCAxLjgtNjUgMS40LTE0OWwtLjYtMTM2LjItMTItMjMuOGMtMTEuNC0yMi44LTEyLjYtMjQuNC0yNy0zNS4yLTguMi02LjQtMjAuOC0xNC0yOC0xN2wtMTMtNS42LTE0Ny0uNGMtOTEuMi0uMi0xNDkgLjQtMTUyIDEuNnptMzE1LjYgNDFjMTIuMiA2IDE5LjYgMTQuMiAyMi40IDI0LjggNi40IDI0LTE4LjggNTEuNi00MyA0Ny4yLTkuOC0yLTIzLjYtMTQuOC0zMC4yLTI4LjQtNC42LTkuMi00LjgtMTEuNC0zLTE3LjQgMi42LTcuOCAxNi40LTIyLjQgMjYuNC0yNy42IDkuNC01IDE1LjItNC42IDI3LjQgMS40ek01MzYuOCAzMzhjNSAxIDE4LjYgNyAzMC40IDEzLjQgMjUgMTMuMiA0Ny4yIDMyLjggNjMgNTUuNiA1LjQgNy42IDExLjYgMTYuMiAxMy44IDE5IDUuOCA3LjIgMTQuOCA1NSAxMy40IDcxLTEuNiAxNi42LTEwIDUzLjgtMTMuNiA1OC42LTEuNiAyLjItNy40IDEwLjYtMTMuMiAxOC42LTE2LjQgMjMuNi00OC42IDUyLTYzLjIgNTUuOC00LjYgMS40LTE1LjYgNS42LTI0LjQgOS42LTE1LjggNy4yLTE2LjQgNy40LTQwIDcuMi0yMy4yLS4yLTI0LjQtLjQtMzktNy40LTguMi00LTE5LjItOC4yLTI0LjQtOS40LTE2LjYtNC4yLTQ5LTM0LTY5LjItNjMuNi0xNi4yLTI0LTE5LTM1LTE5LTc0LjQgMC0zMyAzLjgtNTQuOCAxMS4yLTY0LjggMi42LTMuNCA3LjItMTAuNiAxMC40LTE2IDguNC0xNC40IDI0LjQtMzEuOCAzOC40LTQyIDIwLjItMTQuOCA1My44LTMxLjIgNjcuNi0zMyAxNC4yLTIgNDUuNi0xIDU3LjggMS44eiIvPjxwYXRoIGQ9Ik00OTEgMzk4Yy00LjQuOC0xNi40IDYtMjYuNiAxMS40LTE2IDguNC0yMCAxMS42LTMxLjQgMjUuNC03LjYgOS4yLTE0IDE5LjItMTUuNCAyNC0zLjIgMTEuMi0zLjIgNTIgMCA2Mi42IDMuMiAxMSAyNC40IDM2LjQgMzUgNDIgMTQuOCA4IDM3IDE2LjYgNDUuOCAxNy44IDYuMi44IDEyIDAgMjAuNi0zLjIgNi42LTIuMiAxNy44LTYuMiAyNC42LTguNiAxMC44LTMuNiAxNS02LjYgMjcuNC0xOS42IDEyLTEyLjYgMTUtMTcgMTcuMi0yNiAzLjQtMTMuMiAzLjYtNTUuNC4yLTY2LjgtNS0xNy40LTI5LjQtNDAuNC01OC40LTU1LjItOC40LTQuMi0yNy44LTYuMi0zOS0zLjh6Ii8+PC9zdmc+);
-    }
-    
-    
-    
-    .footer-sns-github {
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgY2xhc3M9Imljb24iIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGQ9Ik0xMzguNCA3OGMtNi40IDEuNC0yNi40IDE0LjItMzYgMjIuOC04IDcuMi0yMiAyOS44LTI0LjQgMzkuMi0xLjYgNi40LTIgMTEzLjItMS42IDM2OCAuNiAyOTkuNCAxIDM1OS44IDMuNCAzNjQgMTEgMjAuMiAyMS42IDMyLjQgMzcuMiA0MyAxNS42IDEwLjYgMTcuMiAxMS4yIDM0LjIgMTMuMiAxMC42IDEuMiA2My40IDEuNiAxMjcuNiAxLjRsMTA5LjYtLjYgNi02LjggNi4yLTYuOC0xLjItMjUuMmMtLjgtMTUuOC0uMi0zMy40IDEuNC00Ny4yIDMtMjUuNCAxLjQtMzYuMi02LTQzLjItNS00LjYtNi4yLTQuOC0zMC42LTQuMi0yNy42LjgtMjQgMS42LTY4LjgtMTYtOC42LTMuNC0yMi42LTE4LTI4LjQtMjkuOC0xMS40LTIyLjgtMjctNDUtMzkuMi01NS42LTE0LTEyLjItMTkuOC0yMC44LTE5LjgtMjguNiAwLTExLjYgMTMuNi0xMi42IDMzLjItMi40IDE2LjYgOC44IDIwLjggMTIuNCA0MC44IDM2LjIgMjQuMiAyOC42IDMxIDMzLjYgNTQgMzkuNiAxNS4yIDQgNDIuMiAzIDUxLjQtMS44IDktNC42IDE4LTE1LjIgMjQuNC0yOS4yIDExLjQtMjQuMiA3LjQtMzEuMi0yMC42LTM2LjgtOS44LTItMjkuMi04LTQzLjQtMTMuNC00MC40LTE1LjgtNjQuNi0zNy40LTg1LjQtNzYuMi0xMS42LTIxLjgtMTUuNC0zMy0xOC4yLTUzLjYtNC4yLTMyLjItNC44LTYwLjItMS40LTg0IDMuNC0yMy44IDYuOC0zMi44IDIwLjItNTQgNC02IDguOC0xNS42IDExLTIxLjQgMy44LTEwIDMuOC0xMS42IDEtMzAtNS4yLTM0LjItMy4yLTUyLjQgNy42LTcwLjIgNy4yLTEyLjIgMTUtMTcuMiAyNC4yLTE1LjggMTIuOCAyLjIgNTIgMTcuNCA2Ni44IDI2LjIgMjYgMTUgMjkgMTUuNCA4Mi40IDcuMiAyNC42LTMuOCAzMy44LTQuMiA2MC0zLjIgMTcgLjYgNDEuNCAzIDU0IDUuMiAzOC40IDYuNiA0OS42IDUuMiA3My0xMCA2LjYtNC4yIDE3LjQtOS40IDI0LTExLjYgNi42LTIuMiAxNi01LjggMjEtOC4yIDEzLTYgMjgtNS42IDM1LjYuOCAxMi40IDEwLjQgMTguNiA0MS40IDE0LjQgNzEuNi00LjQgMzAuNi0zIDM5LjQgOC40IDUzLjggMy40IDQuNCAxMS4yIDE5LjIgMTcuNCAzMy4yTDc3NSA0NDN2NzhsLTEwIDI4Yy0xNS4yIDQzLjItMzYuOCA3My4yLTY2LjIgOTIuOC0xMy40IDguOC01NyAyNS40LTc2LjggMjktMjguMiA1LjItMzMuMiAxMi42LTIyIDMyLjIgMTEuMiAxOS40IDEyLjQgMzIuOCAxMS42IDEyOS42bC0uNiA4NS44IDUuNCA0LjZjMy42IDMgOS4yIDUuMiAxNiA2IDUuOC44IDYwLjIgMSAxMjAuNi42IDEwOC40LS42IDExMC4yLS42IDExOS01IDI0LTExLjYgNDAtMjcuNCA1MS42LTUwLjZsNS40LTExIC42LTM0N2MuNC0yMjMtLjItMzUzLjQtMS40LTM2NS0yLTE3LTIuNi0xOC42LTEzLTM0LTEwLjYtMTUuNC0yMi44LTI2LjItNDMuMi0zNy4yLTQuMi0yLjQtNjQuNi0yLjgtMzY2LTMuMi0xOTguNiAwLTM2NCAuNC0zNjcuNiAxLjR6Ii8+PC9zdmc+);
-    }
-    
-    
-    
-    
-    
-</style>
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
-        <!-- Config CSS -->
+
+    
+
+    
+
+    <!-- Config CSS -->
 
 <!-- Other Styles -->
 <style>
   body, html {
     font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   }
 
   a {
@@ -265,21 +191,117 @@
 
 
 <!-- Import Font -->
+<!-- Import Roboto -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
 
-        <script>lsloader.load("js/jquery.min.js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==")</script>
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="ahscuml">
+    <meta name="msapplication-starturl" content="https://ahscuml.github.io/排序算法/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="ahscuml">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="http://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg">
+
+    <!-- Site Verification -->
     
     
-    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://ahscuml.github.io/排序算法/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="排序算法 | ahscuml">
+    <meta property="og:image" content="http://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg">
+    <meta property="og:description" content="基于网络课程和《数据结构与算法分析——Java语言描述》，基本排序算法的讲解，以及Java代码实现。">
+    <meta property="og:article:tag" content="算法"> <meta property="og:article:tag" content="数据结构"> <meta property="og:article:tag" content="排序"> 
+
+    
+        <meta property="article:published_time" content="Tue Jul 24 2018 09:56:57 GMT+0800">
+        <meta property="article:modified_time" content="Wed Jul 25 2018 21:29:49 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://ahscuml.github.io/排序算法/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://ahscuml.github.io/排序算法/index.html",
+    "headline": "排序算法",
+    "datePublished": "Tue Jul 24 2018 09:56:57 GMT+0800",
+    "dateModified": "Wed Jul 25 2018 21:29:49 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "ahscuml",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "Things change, roll with it!"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ahscuml",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "http://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg"
+        }
+    },
+    "keywords": ",算法,数据结构,排序Code",
+    "description": "基于网络课程和《数据结构与算法分析——Java语言描述》，基本排序算法的讲解，以及Java代码实现。",
+}
+</script>
+
+
+    
 
     <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?bc1232c3e002b15f8a1637e167a9ffbd';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
     
 
     <!-- Custom Head -->
     
+
 </head>
 
 
@@ -297,7 +319,7 @@
                     
                         <!-- Hamburger Button -->
                         <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
                         </button>
                     
 
@@ -320,23 +342,19 @@
     </div>
     -->
 
+
     <!-- Left aligned menu below button -->
+    
+    
     <button id="post-toc-trigger-btn"
         class="mdl-button mdl-js-button mdl-button--icon">
         <i class="material-icons">format_list_numbered</i>
     </button>
 
-    
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
         <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#选择排序-Selection-Sort"><span class="post-toc-number">1.</span> <span class="post-toc-text">选择排序 Selection Sort</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法实现"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">算法实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#选择排序优化"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">选择排序优化</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#插入排序-Insertion-Sort"><span class="post-toc-number">2.</span> <span class="post-toc-text">插入排序 Insertion Sort</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#复杂度分析"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">复杂度分析</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法实现-1"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">算法实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#冒泡排序-Bubble-Sort"><span class="post-toc-number">3.</span> <span class="post-toc-text">冒泡排序 Bubble Sort</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#希尔排序-Shell-Sort"><span class="post-toc-number">4.</span> <span class="post-toc-text">希尔排序 Shell Sort</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法分析"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">算法分析</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#归并排序-Merge-Sort"><span class="post-toc-number">5.</span> <span class="post-toc-text">归并排序 Merge Sort</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#自底向上的归并排序"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">自底向上的归并排序</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#问题：求逆序数个数"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">问题：求逆序数个数</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#快速排序-Quick-Sort"><span class="post-toc-number">6.</span> <span class="post-toc-text">快速排序 Quick Sort</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#简单快速排序-注意数组的边界"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">简单快速排序(注意数组的边界)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#快速排序的优化"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">快速排序的优化</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#问题：取出数组中第n大的元素"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">问题：取出数组中第n大的元素</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#堆排序-HeapSort"><span class="post-toc-number">7.</span> <span class="post-toc-text">堆排序 HeapSort</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#定理"><span class="post-toc-number">8.</span> <span class="post-toc-text">定理</span></a></li></ol>
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
     </ul>
     
-
 
 
 
@@ -354,7 +372,7 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(排序算法/sort.png)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://ww1.sinaimg.cn/large/7f349269ly1ftmdmqg15ij20e80bvq3s.jpg)">
     
             <p class="article-headline-p">
                 排序算法
@@ -391,6 +409,18 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=https://ahscuml.github.io/排序算法/">
+    
+</ul>
+
+    
 
     <!-- Tags (bookmark) -->
     
@@ -400,12 +430,13 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/排序/">排序</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/数据结构/">数据结构</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/算法/">算法</a>
     </ul>
     
 
     <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
     <i class="material-icons" role="presentation">share</i>
     <span class="visuallyhidden">share</span>
 </button>
@@ -427,7 +458,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=排序算法&url=https://ahscuml.github.io/排序算法/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=排序算法&url=https://ahscuml.github.io/排序算法/index.html&pic=https://ahscuml.github.iohttp://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -471,6 +502,7 @@
     
 </ul>
 
+    
 </div>
 
                 
@@ -478,7 +510,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>O(n²) 时间复杂度<br>虽然时间复杂度相对较高，但是同样也有好处</p>
+        <p>基于网络课程和《数据结构与算法分析——Java语言描述》，基本排序算法的讲解，以及Java代码实现。<br><a id="more"></a><br>O(n²) 时间复杂度<br>虽然时间复杂度相对较高，但是同样也有好处</p>
 <ul>
 <li>编码相对简单</li>
 <li>在某些情况下，这些算法反而更有效</li>
@@ -487,8 +519,8 @@
 </ul>
 <p>重要的思想：<br><strong>逆序数</strong>：排序的过程就是消除逆序数的过程，所以逆序数的个数影响排序的性能(也可以从这个角度来思考排序的性能)  </p>
 <ul>
-<li>N个互异数的数组的平均逆序数是 $N(N-1)/4$(数对的一半)  </li>
-<li>通过交换相邻元素进行排序的任何算法平均都需要 $Ω(N^2)$  </li>
+<li>N个互异数的数组的平均逆序数是 $ N(N-1)/4 $(数对的一半)  </li>
+<li>通过交换相邻元素进行排序的任何算法平均都需要 $ Ω(N^2) $  </li>
 <li>对于归并排序，归并过程中，可以一次消除多个逆序数，提高算法效率。</li>
 </ul>
 <h3 id="选择排序-Selection-Sort"><a href="#选择排序-Selection-Sort" class="headerlink" title="选择排序 Selection Sort"></a>选择排序 Selection Sort</h3><p>从未排序的数组中逐一选择最小的元素进行排序<br><strong>KEY：寻找数组中最小的元素</strong><br>大约需要 $\frac{N^2}{2}$次比较和N次交换<br>可以考虑对算法进行升级，不仅仅对整型进行排序，对浮点型甚至对对象进行排序（采用Comparable接口，然后通过compareto进行比较）<br><strong>特点：</strong></p>
@@ -496,21 +528,153 @@
 <li>运行时间和输入无关(这样对于最开始就基本有序的数组就没有优势了)  </li>
 <li>数据移动最少 </li>
 </ul>
-<h4 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">SelectionSort</span><span class="params">(Comparable[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = arr.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> minindex = i;</span><br><span class="line">            <span class="comment">//注意是从i+1开始的</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; n; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(arr[j].compareTo(arr[minindxe]) &lt; <span class="number">0</span>)&#123;</span><br><span class="line">                    minindex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            swap(arr,minindex,i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(Object[] arr, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">        Object e = arr[i];</span><br><span class="line">        arr[i] = arr[j];</span><br><span class="line">        arr[j] = e;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="选择排序优化"><a href="#选择排序优化" class="headerlink" title="选择排序优化"></a>选择排序优化</h4><p>优化前，一次遍历仅仅可以找到最小的排好序，优化后，一次遍历可以找到最小的以及最大的两个元素排好序<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">selectionSort</span><span class="params">(Comparable[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = arr.length;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>, right = n - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">            <span class="keyword">int</span> minindex = left, maxindex = right;</span><br><span class="line">            <span class="keyword">if</span>(arr[minindex].compareTo(arr[maxindex]) &gt; <span class="number">0</span>)</span><br><span class="line">                swap(arr, minindex, maxindex);</span><br><span class="line">                <span class="comment">//注意i的范围</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = left + <span class="number">1</span>; i &lt; right; i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[i].compareTo(arr[minindex]) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                    minindex = i;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (arr[i].compareTo(arr[maxindex]) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    maxindex = i;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            swap(arr, left, minindex);</span><br><span class="line">            swap(arr, right, maxindex);</span><br><span class="line">            left++;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h4><pre><code class="Java">public class SelectionSort{
+    public static void SelectionSort(Comparable[] arr) {
+        int n = arr.length;
+        for (int i = 0; i &lt; n; i++) {
+            int minindex = i;
+            //注意是从i+1开始的
+            for (int j = i + 1; j &lt; n; j++) {
+                if(arr[j].compareTo(arr[minindxe]) &lt; 0){
+                    minindex = j;
+                }
+            }
+            swap(arr,minindex,i);
+        }
+    }
+    public static void swap(Object[] arr, int i, int j){
+        Object e = arr[i];
+        arr[i] = arr[j];
+        arr[j] = e;
+    }
+}
+</code></pre>
+<h4 id="选择排序优化"><a href="#选择排序优化" class="headerlink" title="选择排序优化"></a>选择排序优化</h4><p>优化前，一次遍历仅仅可以找到最小的排好序，优化后，一次遍历可以找到最小的以及最大的两个元素排好序</p>
+<pre><code class="java">public class SelectionSort {
+    public static void selectionSort(Comparable[] arr) {
+        int n = arr.length;
+        int left = 0, right = n - 1;
+        while(left &lt; right){
+            int minindex = left, maxindex = right;
+            if(arr[minindex].compareTo(arr[maxindex]) &gt; 0)
+                swap(arr, minindex, maxindex);
+                //注意i的范围
+            for(int i = left + 1; i &lt; right; i++) {
+                if (arr[i].compareTo(arr[minindex]) &lt; 0) {
+                    minindex = i;
+                }
+                if (arr[i].compareTo(arr[maxindex]) &gt; 0) {
+                    maxindex = i;
+                }
+            }
+            swap(arr, left, minindex);
+            swap(arr, right, maxindex);
+            left++;
+            right--;
+        }
+    }
+}
+</code></pre>
 <h3 id="插入排序-Insertion-Sort"><a href="#插入排序-Insertion-Sort" class="headerlink" title="插入排序 Insertion Sort"></a>插入排序 Insertion Sort</h3><p>插入排序由N-1趟排序组成。对于p到N-1趟，插入排序保证从位置0到位置p上的元素为已排状态。<br><strong>KEY:比前面一个小就进行交换，否则结束这一次插入(比选择排序优秀的地方，可以提前结束)</strong>  </p>
 <ul>
 <li>平均情况下，插入排序需要$\frac{N^2}{4}$次比较与$\frac{N^2}{4}$次交换  </li>
 <li>逆序数思考维度，每一次交换都是在减少一个逆序数，那么就需要逆序数次交换。</li>
-<li>对插入排序进行优化：之前的插入排序每一次插入都要进行很多次交换，然而每次交换都是三次赋值的时间，所以很浪费时间，这样可以牺牲一个时间复杂度，将要插入的元素跟之前的元素进行比较，但是先不交换，等到找到要交换的元素，再进行一次交换，这样每一次插入都只进行一次交换。<h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4>插入排序为$O(n^2)$,如果输入数组时反序的时候，复杂度为$\Theta(N^2)$,如果输入已经预先排序，那么复杂度为$O(N^2)$。正因如此<strong>如果输入几乎被排序，那么插入排序将运行的更快。</strong><h4 id="算法实现-1"><a href="#算法实现-1" class="headerlink" title="算法实现"></a>算法实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertionSort</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertionSort</span><span class="params">(Comparable arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = arr.length;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="comment">// 寻找元素arr[i]合适的插入位置</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// 写法1</span></span><br><span class="line">            <span class="comment">// for( int j = i ; j &gt; 0 ; j -- )</span></span><br><span class="line">            <span class="comment">//    if( arr[j].compareTo( arr[j-1] ) &lt; 0 )</span></span><br><span class="line">            <span class="comment">//        swap( arr, j , j-1 );</span></span><br><span class="line">            <span class="comment">//    else</span></span><br><span class="line">            <span class="comment">//        break;</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// 写法2</span></span><br><span class="line"><span class="comment">//            for( int j = i; j &gt; 0 &amp;&amp; arr[j].compareTo(arr[j-1]) &lt; 0 ; j--)</span></span><br><span class="line"><span class="comment">//                swap(arr, j, j-1);</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// 写法3</span></span><br><span class="line">            <span class="comment">// 改进的插入算法，利用赋值替代交换，减少时间消耗</span></span><br><span class="line">            Comparable e = arr[i];</span><br><span class="line">            <span class="keyword">int</span> j = i;</span><br><span class="line">            <span class="keyword">for</span>( ; j &gt; <span class="number">0</span> &amp;&amp; arr[j-<span class="number">1</span>].compareTo(e) &gt; <span class="number">0</span> ; j--)</span><br><span class="line">                arr[j] = arr[j-<span class="number">1</span>];</span><br><span class="line">            arr[j] = e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(Object[] arr, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">        Object e = arr[i];</span><br><span class="line">        arr[i] = arr[j];</span><br><span class="line">        arr[j] = e;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>对插入排序进行优化：之前的插入排序每一次插入都要进行很多次交换，然而每次交换都是三次赋值的时间，所以很浪费时间，这样可以牺牲一个时间复杂度，将要插入的元素跟之前的元素进行比较，但是先不交换，等到找到要交换的元素，再进行一次交换，这样每一次插入都只进行一次交换。</p>
+<h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><p>插入排序为$O(n^2)$,如果输入数组时反序的时候，复杂度为$\Theta(N^2)$,如果输入已经预先排序，那么复杂度为$O(N^2)$。正因如此<strong>如果输入几乎被排序，那么插入排序将运行的更快。</strong></p>
+<h4 id="算法实现-1"><a href="#算法实现-1" class="headerlink" title="算法实现"></a>算法实现</h4><pre><code class="java">public class InsertionSort{
+  public static void insertionSort(Comparable arr) {
+      int n = arr.length;
+      for(int i = 0; i &lt; n; i++) {
+          // 寻找元素arr[i]合适的插入位置
+
+          // 写法1
+          // for( int j = i ; j &gt; 0 ; j -- )
+          //    if( arr[j].compareTo( arr[j-1] ) &lt; 0 )
+          //        swap( arr, j , j-1 );
+          //    else
+          //        break;
+
+          // 写法2
+//            for( int j = i; j &gt; 0 &amp;&amp; arr[j].compareTo(arr[j-1]) &lt; 0 ; j--)
+//                swap(arr, j, j-1);
+
+          // 写法3
+          // 改进的插入算法，利用赋值替代交换，减少时间消耗
+          Comparable e = arr[i];
+          int j = i;
+          for( ; j &gt; 0 &amp;&amp; arr[j-1].compareTo(e) &gt; 0 ; j--)
+              arr[j] = arr[j-1];
+          arr[j] = e;
+      }
+  }
+  public static void swap(Object[] arr, int i, int j){
+      Object e = arr[i];
+      arr[i] = arr[j];
+      arr[j] = e;
+  }
+}
+</code></pre>
 </li>
 </ul>
-<h3 id="冒泡排序-Bubble-Sort"><a href="#冒泡排序-Bubble-Sort" class="headerlink" title="冒泡排序 Bubble Sort"></a>冒泡排序 Bubble Sort</h3><p>它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ShellSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">ShellSort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 希尔排序算法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(Comparable[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = arr.length;</span><br><span class="line">        <span class="keyword">int</span> h = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (h &lt; n / <span class="number">3</span>) &#123;</span><br><span class="line">            h = <span class="number">3</span> * h + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (h &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="comment">// 排序是从h到n</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = h; i &lt; n; i++) &#123;</span><br><span class="line">                Comparable e = arr[i];</span><br><span class="line">                <span class="keyword">int</span> j = i;</span><br><span class="line">                <span class="keyword">for</span> (; j &gt;= h &amp;&amp; e.compareTo(arr[j - h]) &lt; <span class="number">0</span>; j -= h) &#123;</span><br><span class="line">                    arr[j] = arr[j - h];</span><br><span class="line">                &#125;</span><br><span class="line">                arr[j] = e;</span><br><span class="line">            &#125;</span><br><span class="line">            h /= <span class="number">3</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 测试用例</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> N = <span class="number">1000000</span>;</span><br><span class="line">        Integer[] arr = SortTestHelper.generateRandomArray(N, <span class="number">0</span>, <span class="number">100000</span>);</span><br><span class="line">        SortTestHelper.testSort(<span class="string">"sort.ShellSort"</span>, arr);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="冒泡排序-Bubble-Sort"><a href="#冒泡排序-Bubble-Sort" class="headerlink" title="冒泡排序 Bubble Sort"></a>冒泡排序 Bubble Sort</h3><p>它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。  </p>
+<pre><code class="java">public class ShellSort {
+    private ShellSort() {
+    }
+
+    /**
+     * 希尔排序算法
+     */
+    public static void sort(Comparable[] arr) {
+        int n = arr.length;
+        int h = 1;
+        while (h &lt; n / 3) {
+            h = 3 * h + 1;
+        }
+        while (h &gt;= 1) {
+            // 排序是从h到n
+            for (int i = h; i &lt; n; i++) {
+                Comparable e = arr[i];
+                int j = i;
+                for (; j &gt;= h &amp;&amp; e.compareTo(arr[j - h]) &lt; 0; j -= h) {
+                    arr[j] = arr[j - h];
+                }
+                arr[j] = e;
+            }
+            h /= 3;
+        }
+    }
+
+    /**
+     * 测试用例
+     */
+    public static void main(String[] args) {
+        int N = 1000000;
+        Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
+        SortTestHelper.testSort(&quot;sort.ShellSort&quot;, arr);
+    }
+}
+</code></pre>
 <h3 id="希尔排序-Shell-Sort"><a href="#希尔排序-Shell-Sort" class="headerlink" title="希尔排序 Shell Sort"></a>希尔排序 Shell Sort</h3><ul>
 <li>希尔排序通过比较一定间隔的元素来工作，，各趟比较所用的距离随着算法的进行而减小，知道只比较相邻元素的最后一趟排序为止。  </li>
 <li>$h_k$排序的一般做法是，对于$h_k$，$h_{k+1}$，···$N-1$中的每一个位置<em>i</em>,把其上的元素放到<em>i</em>，$i-h_k$,$i-2h_k$,···中的正确位置上。<h4 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h4></li>
 <li>希尔排序的一个重要性质就是一个$h_k$排序的文件保持它的$h_k$排序性(我的理解就是，经过$h_k$排序后，逆序对不会再增加)  </li>
-<li>使用希尔增量时希尔排序的最坏情形运行时间为$\Theta(N^2)$<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ShellSort</span> </span>&#123;</span><br><span class="line">    <span class="function">privata <span class="title">ShellSort</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">shellSort</span><span class="params">(Comparable[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> gap = arr.length/<span class="number">2</span>; gap &lt; arr.length; gap /= <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = gap; i &lt; arr.length; i++) &#123;</span><br><span class="line">                <span class="comment">// 使用插入排序</span></span><br><span class="line">                Comparable[] temp = arr[i];</span><br><span class="line">                <span class="keyword">int</span> j = i;</span><br><span class="line">                <span class="keyword">for</span>(; j &gt;= gap &amp;&amp; temp.compareTo(arr[j - gap]) &lt;<span class="number">0</span>; j-=gap)&#123;</span><br><span class="line">                    a[j] = a[j - gap];</span><br><span class="line">                &#125;</span><br><span class="line">                a[j] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>使用希尔增量时希尔排序的最坏情形运行时间为$\Theta(N^2)$<pre><code class="java">public class ShellSort {
+  privata ShellSort(){}
+  public static void shellSort(Comparable[] arr){
+      for(int gap = arr.length/2; gap &lt; arr.length; gap /= 2) {
+          for(int i = gap; i &lt; arr.length; i++) {
+              // 使用插入排序
+              Comparable[] temp = arr[i];
+              int j = i;
+              for(; j &gt;= gap &amp;&amp; temp.compareTo(arr[j - gap]) &lt;0; j-=gap){
+                  a[j] = a[j - gap];
+              }
+              a[j] = temp;
+          }
+      }
+  }
+}
+</code></pre>
 </li>
 </ul>
 <hr>
@@ -523,11 +687,189 @@
 <li>对近乎有序的数组进行优化要判断要不要进行归并</li>
 <li>由于对于小数据量的元素使用插入排序更加迅速， 所及可以考虑分层进行到一部分的时候改用插入排序(一部分是怎么确定的？)</li>
 </ul>
-<p>优化后的归并排序<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MergeSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">MergeSort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 递归使用归并排序，对arr[l...r]的范围进行排序</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/*if(l&gt;=r)&#123;</span></span><br><span class="line"><span class="comment">            return;</span></span><br><span class="line"><span class="comment">        &#125;*/</span></span><br><span class="line">        <span class="comment">// 优化2：在归并到一定程度的时候使用插入排序</span></span><br><span class="line">        <span class="keyword">int</span> size = <span class="number">15</span>;</span><br><span class="line">        <span class="keyword">if</span> (r - l &lt;= size) &#123;</span><br><span class="line">            insertionSort(arr, l, r);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// int mid = (r - l) / 2 + l;</span></span><br><span class="line">        <span class="keyword">int</span> mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">        sort(arr, l, mid);</span><br><span class="line">        sort(arr, mid + <span class="number">1</span>, r);</span><br><span class="line">        <span class="comment">// 优化1：如果已经有序就不进行归并了。</span></span><br><span class="line">        <span class="keyword">if</span> (arr[mid].compareTo(arr[mid + <span class="number">1</span>]) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            merge(arr, l, mid, r);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将arr[l...mid]和arr[mid+1...r]两部分进行归并</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> mid, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//拷贝一个数组赋值用(牺牲空间复杂度，降低时间复杂度)</span></span><br><span class="line">        <span class="comment">//注意还有个+1</span></span><br><span class="line">        Comparable[] aux = Arrays.copyOfRange(arr, l, r + <span class="number">1</span>);</span><br><span class="line">                <span class="comment">// 初始化，i指向左半部分的起始索引位置l；j指向右半部分起始索引位置mid+1</span></span><br><span class="line">        <span class="keyword">int</span> i = l, j = mid + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = l; k &lt;= r; k++) &#123;</span><br><span class="line">            <span class="comment">// 如果左半部分元素已经全部处理完毕</span></span><br><span class="line">            <span class="keyword">if</span> (i &gt; mid) &#123;</span><br><span class="line">                <span class="comment">// j - l很关键</span></span><br><span class="line">                arr[k] = aux[j - l];</span><br><span class="line">                j++;</span><br><span class="line">                <span class="comment">// 如果右半部分元素已经全部处理完毕</span></span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; r) &#123;</span><br><span class="line">                arr[k] = aux[i - l];</span><br><span class="line">                i++;</span><br><span class="line">                <span class="comment">// 左半部分所指元素 &lt; 右半部分所指元素</span></span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (aux[i - l].compareTo(aux[j - l]) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                arr[k] = aux[i - l];</span><br><span class="line">                i++;</span><br><span class="line">                <span class="comment">// 左半部分所指元素 &gt;= 右半部分所指元素</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                arr[k] = arr[j - l];</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertionSort</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = l + <span class="number">1</span>; i &lt;= r; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> j = i;</span><br><span class="line">            Comparable e = arr[j];</span><br><span class="line">            <span class="keyword">for</span> (; j &gt; l; j--) &#123;</span><br><span class="line">                <span class="keyword">if</span> (e.compareTo(arr[j - <span class="number">1</span>]) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                    arr[j] = arr[j - <span class="number">1</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            arr[j] = e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>优化后的归并排序</p>
+<pre><code class="java">public class MergeSort {
+    private MergeSort() {
+    }
+
+    /**
+     * 递归使用归并排序，对arr[l...r]的范围进行排序
+     */
+    private static void sort(Comparable[] arr, int l, int r) {
+        /*if(l&gt;=r){
+            return;
+        }*/
+        // 优化2：在归并到一定程度的时候使用插入排序
+        int size = 15;
+        if (r - l &lt;= size) {
+            insertionSort(arr, l, r);
+        }
+        // int mid = (r - l) / 2 + l;
+        int mid = (l + r) / 2;
+        sort(arr, l, mid);
+        sort(arr, mid + 1, r);
+        // 优化1：如果已经有序就不进行归并了。
+        if (arr[mid].compareTo(arr[mid + 1]) &gt; 0) {
+            merge(arr, l, mid, r);
+        }
+    }
+    /**
+     * 将arr[l...mid]和arr[mid+1...r]两部分进行归并
+     */
+    private static void merge(Comparable[] arr, int l, int mid, int r) {
+        //拷贝一个数组赋值用(牺牲空间复杂度，降低时间复杂度)
+        //注意还有个+1
+        Comparable[] aux = Arrays.copyOfRange(arr, l, r + 1);
+                // 初始化，i指向左半部分的起始索引位置l；j指向右半部分起始索引位置mid+1
+        int i = l, j = mid + 1;
+        for (int k = l; k &lt;= r; k++) {
+            // 如果左半部分元素已经全部处理完毕
+            if (i &gt; mid) {
+                // j - l很关键
+                arr[k] = aux[j - l];
+                j++;
+                // 如果右半部分元素已经全部处理完毕
+            } else if (j &gt; r) {
+                arr[k] = aux[i - l];
+                i++;
+                // 左半部分所指元素 &lt; 右半部分所指元素
+            } else if (aux[i - l].compareTo(aux[j - l]) &lt; 0) {
+                arr[k] = aux[i - l];
+                i++;
+                // 左半部分所指元素 &gt;= 右半部分所指元素
+            } else {
+                arr[k] = arr[j - l];
+                j++;
+            }
+        }
+    }
+    private static void insertionSort(Comparable[] arr, int l, int r) {
+        for (int i = l + 1; i &lt;= r; i++) {
+            int j = i;
+            Comparable e = arr[j];
+            for (; j &gt; l; j--) {
+                if (e.compareTo(arr[j - 1]) &lt; 0) {
+                    arr[j] = arr[j - 1];
+                } else {
+                    break;
+                }
+            }
+            arr[j] = e;
+        }
+    }
+}
+</code></pre>
 <h4 id="自底向上的归并排序"><a href="#自底向上的归并排序" class="headerlink" title="自底向上的归并排序"></a>自底向上的归并排序</h4><p>不使用递归，只用迭代性能相对来说要差一点点<br>并没有使用到数组的特性(通过下标寻找元素)，所以对于链表很适用。<br>对于数组要思考到越界的问题  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MergeSortBUAdvanced</span></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自底向上归并排序优化</span></span><br><span class="line"><span class="comment">     * 1、在size小的时候采用插入排序</span></span><br><span class="line"><span class="comment">     * 2、如果归并之前已经有序，则不进行归并</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(Comparable[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = arr.length;</span><br><span class="line">        <span class="comment">// 设置size，低于这个size使用插入排序</span></span><br><span class="line">        <span class="keyword">int</span> size = <span class="number">16</span>;</span><br><span class="line">        <span class="comment">// 优化1： 小数组使用插入排序更优化</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i += size) &#123;</span><br><span class="line">            insertionSort(arr, i, Math.min(i + size - <span class="number">1</span>, n - <span class="number">1</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (; size &lt; n; size += size) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i + size  &lt; n; i += size + size) &#123;</span><br><span class="line">                <span class="comment">// 优化2： 如果之前已经有序，则不进行归并</span></span><br><span class="line">                <span class="keyword">if</span> (arr[i + size - <span class="number">1</span>].compareTo(arr[i + size]) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    merge(arr, i, i + size - <span class="number">1</span>, Math.min(i + size + size - <span class="number">1</span>, n - <span class="number">1</span>));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> mid, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        Comparable[] aux = Arrays.copyOfRange(arr, l, r + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">int</span> i = l, j = mid + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = l; k &lt;= r; k++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i &gt; mid) &#123;</span><br><span class="line">                arr[k] = aux[j - l];</span><br><span class="line">                j++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; r) &#123;</span><br><span class="line">                arr[k] = aux[i - l];</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (aux[i - l].compareTo(aux[j - l]) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                arr[k] = aux[i - l];</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                arr[k] = aux[j - l];</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 优化中使用的插入排序</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertionSort</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = l; i &lt;= r; i++) &#123;</span><br><span class="line">            Comparable e = arr[i];</span><br><span class="line">            <span class="keyword">int</span> j = i;</span><br><span class="line">            <span class="keyword">for</span> (; j &gt; l; j--) &#123;</span><br><span class="line">                <span class="keyword">if</span> (e.compareTo(arr[j - <span class="number">1</span>]) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                    arr[j] = arr[j - <span class="number">1</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            arr[j] = e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="java">public class MergeSortBUAdvanced{
+    /**
+     * 自底向上归并排序优化
+     * 1、在size小的时候采用插入排序
+     * 2、如果归并之前已经有序，则不进行归并
+     */
+    public static void sort(Comparable[] arr) {
+        int n = arr.length;
+        // 设置size，低于这个size使用插入排序
+        int size = 16;
+        // 优化1： 小数组使用插入排序更优化
+        for (int i = 0; i &lt; n; i += size) {
+            insertionSort(arr, i, Math.min(i + size - 1, n - 1));
+        }
+        for (; size &lt; n; size += size) {
+            for (int i = 0; i + size  &lt; n; i += size + size) {
+                // 优化2： 如果之前已经有序，则不进行归并
+                if (arr[i + size - 1].compareTo(arr[i + size]) &gt; 0) {
+                    merge(arr, i, i + size - 1, Math.min(i + size + size - 1, n - 1));
+                }
+            }
+        }
+    }
+
+    private static void merge(Comparable[] arr, int l, int mid, int r) {
+        Comparable[] aux = Arrays.copyOfRange(arr, l, r + 1);
+        int i = l, j = mid + 1;
+        for (int k = l; k &lt;= r; k++) {
+            if (i &gt; mid) {
+                arr[k] = aux[j - l];
+                j++;
+            } else if (j &gt; r) {
+                arr[k] = aux[i - l];
+                i++;
+            } else if (aux[i - l].compareTo(aux[j - l]) &lt; 0) {
+                arr[k] = aux[i - l];
+                i++;
+            } else {
+                arr[k] = aux[j - l];
+                j++;
+            }
+        }
+    }
+    // 优化中使用的插入排序
+    private static void insertionSort(Comparable[] arr, int l, int r) {
+        for (int i = l; i &lt;= r; i++) {
+            Comparable e = arr[i];
+            int j = i;
+            for (; j &gt; l; j--) {
+                if (e.compareTo(arr[j - 1]) &lt; 0) {
+                    arr[j] = arr[j - 1];
+                } else {
+                    break;
+                }
+            }
+            arr[j] = e;
+        }
+    }
+}
+</code></pre>
 <h4 id="问题：求逆序数个数"><a href="#问题：求逆序数个数" class="headerlink" title="问题：求逆序数个数"></a>问题：求逆序数个数</h4><p>对递归的理解很关键，通过运用归并排序的方法，使得求逆序数的复杂度变为 $O(nlogn$</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InversionCount</span></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 递归排序(用作分割)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">long</span> <span class="title">sort</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (l &gt;= r) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0L</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mid = l + (r - l) / <span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 求出 arr[l...mid] 范围的逆序数</span></span><br><span class="line">        <span class="keyword">long</span> countl = sort(arr, l, mid);</span><br><span class="line">        <span class="comment">// 求出 arr[mid+1...r] 范围的逆序数</span></span><br><span class="line">        <span class="keyword">long</span> countr = sort(arr, mid + <span class="number">1</span>, r);</span><br><span class="line">        <span class="comment">// 两个count分别是上一个merge的结果，这就相当于将所有的merge结果相加</span></span><br><span class="line">        <span class="keyword">return</span> countl + countr + merge(arr, l, mid, r);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 合并操作,就是一个排序的过程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">long</span> <span class="title">merge</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> mid, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 逆序数对个数初始化</span></span><br><span class="line">        <span class="keyword">long</span> count = <span class="number">0L</span>;</span><br><span class="line">        <span class="comment">// merge操作</span></span><br><span class="line">        Comparable[] aux = Arrays.copyOfRange(arr, l, r + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">int</span> i = l, j = mid + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = l; k &lt;= r; k++) &#123;  <span class="comment">// 如果左半部分元素已经全部处理完毕</span></span><br><span class="line">            <span class="keyword">if</span> (i &gt; mid) &#123;</span><br><span class="line">                arr[k] = aux[j - l];</span><br><span class="line">                j++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; r) &#123;  <span class="comment">// 如果右半部分元素已经全部处理完毕</span></span><br><span class="line">                arr[k] = aux[i - l];</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (aux[j - l].compareTo(aux[i - l]) &gt;= <span class="number">0</span>) &#123;  <span class="comment">// 左半部分所指元素 &lt;= 右半部分所指元素</span></span><br><span class="line">                arr[k] = aux[i - l];</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">// 右半部分所指元素 &lt; 左半部分所指元素</span></span><br><span class="line">                arr[k] = aux[j - l];</span><br><span class="line">                j++;</span><br><span class="line">                <span class="comment">// 此时, 因为右半部分j所指的元素小</span></span><br><span class="line">                <span class="comment">// 这个元素和左半部分的所有未处理的元素都构成了逆序数对(不包括右边的是因为右边的在上一次迭代的时候已经计算过了)</span></span><br><span class="line">                <span class="comment">// 左半部分此时未处理的元素个数为 mid - i + 1(注意i的意思，i是将要处理的元素)</span></span><br><span class="line">                count = count + (<span class="keyword">long</span>) (mid - i + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="java">public class InversionCount{
+    /**
+     * 递归排序(用作分割)
+     */
+    public static long sort(Comparable[] arr, int l, int r) {
+        if (l &gt;= r) {
+            return 0L;
+        }
+        int mid = l + (r - l) / 2;
+        // 求出 arr[l...mid] 范围的逆序数
+        long countl = sort(arr, l, mid);
+        // 求出 arr[mid+1...r] 范围的逆序数
+        long countr = sort(arr, mid + 1, r);
+        // 两个count分别是上一个merge的结果，这就相当于将所有的merge结果相加
+        return countl + countr + merge(arr, l, mid, r);
+    }
+
+    /**
+     * 合并操作,就是一个排序的过程
+     */
+    private static long merge(Comparable[] arr, int l, int mid, int r) {
+        // 逆序数对个数初始化
+        long count = 0L;
+        // merge操作
+        Comparable[] aux = Arrays.copyOfRange(arr, l, r + 1);
+        int i = l, j = mid + 1;
+        for (int k = l; k &lt;= r; k++) {  // 如果左半部分元素已经全部处理完毕
+            if (i &gt; mid) {
+                arr[k] = aux[j - l];
+                j++;
+            } else if (j &gt; r) {  // 如果右半部分元素已经全部处理完毕
+                arr[k] = aux[i - l];
+                i++;
+            } else if (aux[j - l].compareTo(aux[i - l]) &gt;= 0) {  // 左半部分所指元素 &lt;= 右半部分所指元素
+                arr[k] = aux[i - l];
+                i++;
+            } else { // 右半部分所指元素 &lt; 左半部分所指元素
+                arr[k] = aux[j - l];
+                j++;
+                // 此时, 因为右半部分j所指的元素小
+                // 这个元素和左半部分的所有未处理的元素都构成了逆序数对(不包括右边的是因为右边的在上一次迭代的时候已经计算过了)
+                // 左半部分此时未处理的元素个数为 mid - i + 1(注意i的意思，i是将要处理的元素)
+                count = count + (long) (mid - i + 1);
+            }
+        }
+        return count;
+    }
+}
+</code></pre>
 <h3 id="快速排序-Quick-Sort"><a href="#快速排序-Quick-Sort" class="headerlink" title="快速排序 Quick Sort"></a>快速排序 Quick Sort</h3><p><strong>key:如何将数组分为大小两个(Partition)</strong><br>递归思想，分别使用快速排序<br>围绕着枢纽元进行大小分离，不进行排序，只区分大小  </p>
 <h4 id="简单快速排序-注意数组的边界"><a href="#简单快速排序-注意数组的边界" class="headerlink" title="简单快速排序(注意数组的边界)"></a>简单快速排序(注意数组的边界)</h4><blockquote>
 <ol>
@@ -537,13 +879,42 @@
 <li>最终的结构，j是选定元素的下标，左边是小于$v$的元素，右面是大于$v$的元素<br><img src="算法与数据结构/QuickSort/Quicksort3.png" alt="快速排序结构3"></li>
 </ol>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickSort</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">        <span class="comment">// 递归的基准情况</span></span><br><span class="line">        <span class="keyword">if</span> (l &gt;= r) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// partion操作，移动元素，找到中值的位置</span></span><br><span class="line">        Comparable v = arr[l];</span><br><span class="line">        <span class="keyword">int</span> j = l;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = l + <span class="number">1</span>; i &lt;= r; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[i].compareTo(v) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                j++;</span><br><span class="line">                swap(arr, j, i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        swap(arr, l, j);</span><br><span class="line">        j--;</span><br><span class="line">        <span class="comment">// 进行递归</span></span><br><span class="line">        sort(arr, l, j);</span><br><span class="line">        sort(arr, j + <span class="number">2</span>, r);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 交换函数</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">        Comparable temp = arr[i];</span><br><span class="line">        arr[i] = arr[j];</span><br><span class="line">        arr[j] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="java">public class QuickSort{
+    public static void quickSort(Comparable[] arr, int l, int r){
+        // 递归的基准情况
+        if (l &gt;= r) {
+            return;
+        }
+        // partion操作，移动元素，找到中值的位置
+        Comparable v = arr[l];
+        int j = l;
+        for (int i = l + 1; i &lt;= r; i++) {
+            if (arr[i].compareTo(v) &lt; 0) {
+                j++;
+                swap(arr, j, i);
+            } else {
+                i++;
+            }
+        }
+        swap(arr, l, j);
+        j--;
+        // 进行递归
+        sort(arr, l, j);
+        sort(arr, j + 2, r);
+    }
+    // 交换函数
+    private static void swap(Comparable[] arr, int i, int j) {
+        Comparable temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+</code></pre>
 <h4 id="快速排序的优化"><a href="#快速排序的优化" class="headerlink" title="快速排序的优化"></a>快速排序的优化</h4><p>重点关注列表中下标的位置，根据整个流程来编写程序，同时在分界点，根据下标来区分。</p>
 <ol>
 <li>底层可以采用插入排序的算法进行优化</li>
 <li>针对 <strong>近乎有序</strong> 数组的优化。和归并排序比较，都是利用递归，同样将数组一分为二，但是归并左右两部分是平衡的而快速排序却不是(根据元素的选择)。 不再采用第一个元素为中间值，采用随机选取元素作为中间值。</li>
-<li><p>针对有 <strong>重复元素</strong> 的数组进行的优化。由于在对数组进行分类的时候，与中间值相等的元素并没有进行考虑，所以仍旧被分到了两侧，这样下一次排序仍然要对这些元素进行比较，导致速度很慢。 可以考虑在分类的时候，将大的元素从后往前放置，小的元素从前往后放置，将与中间值相等的元素分散到两侧，这样对于有大量的相同元素的数组可以避免一边数据量很大造成不平衡。  </p>
-<blockquote>
+<li>针对有 <strong>重复元素</strong> 的数组进行的优化。由于在对数组进行分类的时候，与中间值相等的元素并没有进行考虑，所以仍旧被分到了两侧，这样下一次排序仍然要对这些元素进行比较，导致速度很慢。 可以考虑在分类的时候，将大的元素从后往前放置，小的元素从前往后放置，将与中间值相等的元素分散到两侧，这样对于有大量的相同元素的数组可以避免一边数据量很大造成不平衡。  <blockquote>
 <ul>
 <li>新的算法思想<span id="QuickSort2Ways">(QuickSort2Ways)</span></li>
 </ul>
@@ -552,28 +923,188 @@
 <li>继续从i开始向后遍历元素，直到找到元素$&gt;=v$。<br><img src="算法与数据结构/QuickSort/QuickSortAdvanced2.png" alt="QuickSortAdvanced"></li>
 <li>继续从j开始向前遍历元素，直到找到元素$&lt;=v$。<br><img src="算法与数据结构/QuickSort/QuickSortAdvanced3.png" alt="QuickSortAdvanced"></li>
 <li>然后交换i的元素和j的元素<br><img src="算法与数据结构/QuickSort/QuickSortAdvanced4.png" alt="QuickSortAdvanced"></li>
-<li>继续遍历，直到i=j遍历完成<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickSort2Ways</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">QuickSort2Ways</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 优化：小数组采用插入排序, 递归的基准情况</span></span><br><span class="line">        <span class="keyword">int</span> size = <span class="number">16</span>;</span><br><span class="line">        <span class="keyword">if</span> (r - l &lt;= size - <span class="number">1</span>) &#123;</span><br><span class="line">            insertionSort(arr, l, r);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 优化：随机选择中间值，避免过多相同元素的情况</span></span><br><span class="line">        swap(arr, l, (<span class="keyword">int</span>) Math.random() * (r - l + <span class="number">1</span>) + l);</span><br><span class="line">        <span class="comment">// 优化：两路排序</span></span><br><span class="line">        Comparable v = arr[l];</span><br><span class="line">        <span class="keyword">int</span> i = l + <span class="number">1</span>, j = r;</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            <span class="comment">// 为什么是 &lt; 不是 &lt;= 的思考(http://coding.imooc.com/learn/questiondetail/4920.html)</span></span><br><span class="line">            <span class="keyword">while</span> (i &lt;= r &amp;&amp; arr[i].compareTo(v) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span> (j &gt;= l + <span class="number">1</span> &amp;&amp; arr[j].compareTo(v) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 跳出循环</span></span><br><span class="line">            <span class="keyword">if</span> (i &gt; j) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            swap(arr, i, j);</span><br><span class="line">            i++;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">        swap(arr, l, j);</span><br><span class="line">        <span class="comment">// 递归调用</span></span><br><span class="line">        sort(arr, l, j - <span class="number">1</span>);</span><br><span class="line">        sort(arr, j + <span class="number">1</span>, r);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">        Comparable temp = arr[i];</span><br><span class="line">        arr[i] = arr[j];</span><br><span class="line">        arr[j] = temp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertionSort</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = l; i &lt; r; i++) &#123;</span><br><span class="line">            Comparable e = arr[i];</span><br><span class="line">            <span class="keyword">int</span> j = i;</span><br><span class="line">            <span class="keyword">for</span> (; j &gt; l; j--) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[j - <span class="number">1</span>].compareTo(e) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    arr[j] = arr[j - <span class="number">1</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            arr[j] = e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li>继续遍历，直到i=j遍历完成</li>
 </ol>
 </blockquote>
 </li>
-<li><p>在<a href="#QuickSort2Ways">QuickSort2Ways</a>的基础之上对于选定元素相等的元素也进行分类，产生QuickSort3Ways.</p>
-<blockquote>
+</ol>
+<pre><code class="java">public class QuickSort2Ways {
+   public static void QuickSort2Ways(Comparable[] arr, int l, int r) {
+        // 优化：小数组采用插入排序, 递归的基准情况
+        int size = 16;
+        if (r - l &lt;= size - 1) {
+            insertionSort(arr, l, r);
+            return;
+        }
+        // 优化：随机选择中间值，避免过多相同元素的情况
+        swap(arr, l, (int) Math.random() * (r - l + 1) + l);
+        // 优化：两路排序
+        Comparable v = arr[l];
+        int i = l + 1, j = r;
+        while (true) {
+            // 为什么是 &lt; 不是 &lt;= 的思考(http://coding.imooc.com/learn/questiondetail/4920.html)
+            while (i &lt;= r &amp;&amp; arr[i].compareTo(v) &lt; 0) {
+                i++;
+            }
+            while (j &gt;= l + 1 &amp;&amp; arr[j].compareTo(v) &gt; 0) {
+                j--;
+            }
+            // 跳出循环
+            if (i &gt; j) {
+                break;
+            }
+            swap(arr, i, j);
+            i++;
+            j--;
+        }
+        swap(arr, l, j);
+        // 递归调用
+        sort(arr, l, j - 1);
+        sort(arr, j + 1, r);
+    }
+
+    private static void swap(Comparable[] arr, int i, int j) {
+        Comparable temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    private static void insertionSort(Comparable[] arr, int l, int r) {
+        for (int i = l; i &lt; r; i++) {
+            Comparable e = arr[i];
+            int j = i;
+            for (; j &gt; l; j--) {
+                if (arr[j - 1].compareTo(e) &gt; 0) {
+                    arr[j] = arr[j - 1];
+                } else {
+                    break;
+                }
+            }
+            arr[j] = e;
+        }
+    }
+}
+</code></pre>
+<ol start="4">
+<li>在<a href="#QuickSort2Ways">QuickSort2Ways</a>的基础之上对于选定元素相等的元素也进行分类，产生QuickSort3Ways.<blockquote>
 <ul>
 <li>终极算法QuickSort3Ways</li>
 </ul>
 <ol>
-<li>开始的状态，同时维护3路元素，分别是$&gt;v$、$&lt;v$、$=v$。初始阶段如下图，注意边界的值！<br><img src="picture/Quicksort/QuickSort3Ways1.png" alt="QuickSort3Ways"></li>
+<li>开始的状态，同时维护3路元素，分别是$&gt;v$、$&lt;v$、$=v$。初始阶段如下图，注意边界的值！<br><img src="算法与数据结构/Quicksort/QuickSort3Ways1.png" alt="QuickSort3Ways"></li>
 <li>如果元素$e$与元素$v$相等，则将i向后移动一位<br><img src="算法与数据结构/Quicksort/QuickSort3Ways2.png" alt="QuickSort3Ways"></li>
 <li>如果元素$e$比元素$v$小，则将$e$与 =$v$ 的元素块第一个元素(lt+1)交换,i向后移动一位<br><img src="算法与数据结构/Quicksort/QuickSort3Ways3.png" alt="QuickSort3Ways"></li>
 <li>如果元素$e$比元素$v$大，则将$e$与 &gt;$v$ 的元素块第一个元素(gt-1)交换,i向后移动一位<br><img src="算法与数据结构/Quicksort/QuickSort3Ways4.png" alt="QuickSort3Ways">    </li>
-<li>最终的结果就是 i 与 gt 相等，遍历结束,最终还要讲lt位置的元素与第一个元素交换位置，得到最终的数组(如果不打算维护lt这个元素，要注意数组的边界位置)<br><img src="算法与数据结构/Quicksort/QuickSort3Ways5.png" alt="QuickSort3Ways"><br><img src="算法与数据结构/Quicksort/QuickSort3Ways6.png" alt="QuickSort3Ways"><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickSort3Ways</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 3路快速排序算法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">QuickSort3Ways</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 优化1：在小分组的时候使用插入排序</span></span><br><span class="line">        <span class="keyword">int</span> size = <span class="number">16</span>;</span><br><span class="line">        <span class="keyword">if</span> (r - l &lt;= size - <span class="number">1</span>) &#123;</span><br><span class="line">            insertionSort(arr, l, r);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 优化2：随机选取元素的中间值，避免大量重复元素</span></span><br><span class="line">        swap(arr, l, (<span class="keyword">int</span>) Math.random() * (r - l + <span class="number">1</span>) + l);</span><br><span class="line">        Comparable v = arr[l];</span><br><span class="line">        <span class="comment">// gt从r+1开始</span></span><br><span class="line">        <span class="keyword">int</span> lt = l, gt = r + <span class="number">1</span>, i = l + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; gt) &#123;</span><br><span class="line">            <span class="keyword">if</span>(v.compareTo(arr[i]) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                lt++;</span><br><span class="line">                swap(arr,i,lt);</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(v.compareTo(arr[i]) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">// 交换了一个没有判断过的元素到i，所以i不用+1！</span></span><br><span class="line">                gt--;</span><br><span class="line">                swap(arr,i,gt);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">// 两个元素相等的情况，不用进行交换</span></span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 将第一个元素交换到=v的位置</span></span><br><span class="line">        swap(arr,l,lt);</span><br><span class="line">        lt--;</span><br><span class="line">        <span class="comment">// 递归调用</span></span><br><span class="line">        sort(arr,l,lt);</span><br><span class="line">        sort(arr,gt,r);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 插入排序算法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertionSort</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; r - l + <span class="number">1</span>; i++) &#123;</span><br><span class="line">            Comparable e = arr[i];</span><br><span class="line">            <span class="keyword">int</span> j = i;</span><br><span class="line">            <span class="keyword">for</span> (; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">                <span class="keyword">if</span> (e.compareTo(arr[j - <span class="number">1</span>]) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                    arr[j] = arr[j - <span class="number">1</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            arr[j] = e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 交换函数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">        Comparable temp = arr[i];</span><br><span class="line">        arr[i] = arr[j];</span><br><span class="line">        arr[j] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li>最终的结果就是 i 与 gt 相等，遍历结束,最终还要讲lt位置的元素与第一个元素交换位置，得到最终的数组(如果不打算维护lt这个元素，要注意数组的边界位置)<br><img src="算法与数据结构/Quicksort/QuickSort3Ways5.png" alt="QuickSort3Ways"><br><img src="算法与数据结构/Quicksort/QuickSort3Ways6.png" alt="QuickSort3Ways"></li>
 </ol>
 </blockquote>
 </li>
 </ol>
-<h4 id="问题：取出数组中第n大的元素"><a href="#问题：取出数组中第n大的元素" class="headerlink" title="问题：取出数组中第n大的元素"></a>问题：取出数组中第n大的元素</h4><p>如果利用先排序再找到第n个最大值，那么这个算法的复杂度为$O(nlogn)$,但是利用快速排序的思想可以很好的解决这个问题，使得复杂度变为$O(n)$<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Comparable <span class="title">selection</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = arr.length;</span><br><span class="line">        <span class="comment">// 注意这里是k - 1，因为下标还包括0</span></span><br><span class="line">        <span class="keyword">return</span> selection(arr, <span class="number">0</span>, n - <span class="number">1</span>, k - <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> Comparable <span class="title">selection</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        swap(arr, l, (<span class="keyword">int</span>) Math.random() * (r - l + <span class="number">1</span>) + l);</span><br><span class="line">        Comparable v = arr[l];</span><br><span class="line">        <span class="keyword">int</span> j = l;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = l + <span class="number">1</span>; i &lt;= r; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[i].compareTo(v) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                j++;</span><br><span class="line">                swap(arr, i, j);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        swap(arr, l, j);</span><br><span class="line">        <span class="comment">// 避免函数越界</span></span><br><span class="line">        <span class="keyword">if</span> (l == r) &#123;</span><br><span class="line">            <span class="keyword">return</span> arr[l];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (j  &lt; k) &#123;</span><br><span class="line">            <span class="keyword">return</span> selection(arr, j + <span class="number">1</span>, r, k);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; k) &#123;</span><br><span class="line">            <span class="keyword">return</span> selection(arr,l,j - <span class="number">1</span>,k);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> arr[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 交换函数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(Comparable[] arr, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">        Comparable temp = arr[i];</span><br><span class="line">        arr[i] = arr[j];</span><br><span class="line">        arr[j] = temp;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<pre><code class="java">public class QuickSort3Ways {
+    /**
+     * 3路快速排序算法
+     */
+    private static void QuickSort3Ways(Comparable[] arr, int l, int r) {
+        // 优化1：在小分组的时候使用插入排序
+        int size = 16;
+        if (r - l &lt;= size - 1) {
+            insertionSort(arr, l, r);
+            return;
+        }
+        // 优化2：随机选取元素的中间值，避免大量重复元素
+        swap(arr, l, (int) Math.random() * (r - l + 1) + l);
+        Comparable v = arr[l];
+        // gt从r+1开始
+        int lt = l, gt = r + 1, i = l + 1;
+        while (i &lt; gt) {
+            if(v.compareTo(arr[i]) &gt; 0) {
+                lt++;
+                swap(arr,i,lt);
+                i++;
+            } else if(v.compareTo(arr[i]) &lt; 0) {
+                // 交换了一个没有判断过的元素到i，所以i不用+1！
+                gt--;
+                swap(arr,i,gt);
+            } else {
+                // 两个元素相等的情况，不用进行交换
+                i++;
+            }
+        }
+        // 将第一个元素交换到=v的位置
+        swap(arr,l,lt);
+        lt--;
+        // 递归调用
+        sort(arr,l,lt);
+        sort(arr,gt,r);
+    }
+
+    /**
+     * 插入排序算法
+     */
+    public static void insertionSort(Comparable[] arr, int l, int r) {
+        for (int i = 1; i &lt; r - l + 1; i++) {
+            Comparable e = arr[i];
+            int j = i;
+            for (; j &gt; 0; j--) {
+                if (e.compareTo(arr[j - 1]) &lt; 0) {
+                    arr[j] = arr[j - 1];
+                } else {
+                    break;
+                }
+            }
+            arr[j] = e;
+        }
+    }
+
+    /**
+     * 交换函数
+     */
+    private static void swap(Comparable[] arr, int i, int j) {
+        Comparable temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+</code></pre>
+<h4 id="问题：取出数组中第n大的元素"><a href="#问题：取出数组中第n大的元素" class="headerlink" title="问题：取出数组中第n大的元素"></a>问题：取出数组中第n大的元素</h4><p>如果利用先排序再找到第n个最大值，那么这个算法的复杂度为$O(nlogn)$,但是利用快速排序的思想可以很好的解决这个问题，使得复杂度变为$O(n)$</p>
+<pre><code class="java">public static Comparable selection(Comparable[] arr, int k) {
+        int n = arr.length;
+        // 注意这里是k - 1，因为下标还包括0
+        return selection(arr, 0, n - 1, k - 1);
+}
+private static Comparable selection(Comparable[] arr, int l, int r, int k) {
+        swap(arr, l, (int) Math.random() * (r - l + 1) + l);
+        Comparable v = arr[l];
+        int j = l;
+        for (int i = l + 1; i &lt;= r; i++) {
+            if (arr[i].compareTo(v) &lt; 0) {
+                j++;
+                swap(arr, i, j);
+            }
+        }
+        swap(arr, l, j);
+        // 避免函数越界
+        if (l == r) {
+            return arr[l];
+        }
+        if (j  &lt; k) {
+            return selection(arr, j + 1, r, k);
+        } else if (j &gt; k) {
+            return selection(arr,l,j - 1,k);
+        } else {
+            return arr[j];
+        }
+    }
+
+    /**
+     * 交换函数
+     */
+    private static void swap(Comparable[] arr, int i, int j) {
+        Comparable temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+</code></pre>
 <h3 id="堆排序-HeapSort"><a href="#堆排序-HeapSort" class="headerlink" title="堆排序 HeapSort"></a>堆排序 HeapSort</h3><p>重点在于堆这种数据结构<br>队列：<br>普通队列：按照时间顺序，先进先出，后进后出<br>优先队列：出队顺序和入队顺序和时间无关，和优先级有关</p>
 <h3 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h3><ol>
 <li>N个互异数的数组的平均逆序数是$\frac{N(N-1)}{4}$</li>
@@ -581,6 +1112,17 @@
 <li></li>
 </ol>
 
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            This blog is under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0 Unported License</a>
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://ahscuml.github.io/排序算法/">https://ahscuml.github.io/排序算法/</a>
+                    </p>
+                </blockquote>
+        
     
 
     
@@ -592,6 +1134,90 @@
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #757575;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://ahscuml.github.io/排序算法/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://ahscuml.github.io/排序算法/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//https-ahscuml-github-io.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//https-ahscuml-github-io.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
                 
             </div>
 
@@ -636,7 +1262,7 @@
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
     <div id="sidebar-main">
         <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+        <div class="sidebar-header header-cover" style="background-image: url(http://ww1.sinaimg.cn/large/7f349269ly1ftmf5fesxfj21qi15oqd9.jpg);">
     <!-- Top bar -->
     <div class="top-bar"></div>
 
@@ -723,13 +1349,35 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Algorithm-DataStructure/">Algorithm&DataStructure<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Life/">Life<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Life/">Life<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/有意思/">有意思<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法与数据结构/">算法与数据结构<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
+        
+            <li class="divider"></li>
         
     
 
     <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">cloud_circle</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="Timeline">
+                
+                    <i class="material-icons sidebar-material-icons">send</i>
+                
+                Timeline
+            </a>
+        </li>
+        
     
         <li>
             <a href="https://github.com/ahscuml" title="About">
@@ -878,12 +1526,16 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
+    
+    <!-- V2EX -->
+    
 </div>
 
 
         <!--Copyright-->
         <div id="copyright">
             Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>ahscuml
+            
         </div>
 
         <!-- Paradox Footer Right Section -->
@@ -906,15 +1558,17 @@ It will not impact the appearance and can give developers a lot of support :)
 </footer>
 
 
-                    <!-- Import File -->
+                    <!-- Import JS File -->
 
-
-    <script>lsloader.load("js/lazyload.min.js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==")</script>
-    <script>lsloader.load("js/js.min.js","/js/js.min.js?oAl/+lvaqTFV31JXTmbrNA==")</script>
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
 
 
 
-    <script>lsloader.load("js/nprogress.js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==")</script>
+    <script>lsloader.load("js_js","/js/js.min.js?d+XW6aNuIPgOn1iA7NnB4g==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
 
 
 <script type="text/ls-javascript" id="NProgress-script">
@@ -941,7 +1595,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
     
-        <script>lsloader.load("js/smoothscroll.js","/js/smoothscroll.js?lOy/ACj5suSNi7ZVFVbpFQ==")</script>
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?lOy/ACj5suSNi7ZVFVbpFQ==", true)</script>
     
 
 
@@ -951,6 +1605,9 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- Busuanzi -->
     <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+
+   <!-- 使用 DISQUS js 代码 -->
 
 
 
@@ -966,15 +1623,55 @@ It will not impact the appearance and can give developers a lot of support :)
 	}
 </script>
 
-<!-- Window Load-->
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
 <script type="text/ls-javascript" id="window-load">
     $(window).on('load', function() {
         // Post_Toc parent position fixed
         $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
     });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
 </script>
 
 <!-- MathJax Load-->
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+<!-- Bing Background -->
+
 
 <script type="text/ls-javascript" id="lazy-load">
     // Offer LazyLoad
@@ -992,7 +1689,8 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 </script>
 
-<!-- Bing Background -->
+<!-- Custom Footer -->
+
 
 
 <script>
@@ -1004,7 +1702,7 @@ It will not impact the appearance and can give developers a lot of support :)
             lsloader.runInlineScript(item.id,item.id);
         }
     })()
-console.log('\n %c © Material Theme | Version: 1.4.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
 </script>
 
                 </main>
