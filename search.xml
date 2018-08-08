@@ -3,6 +3,33 @@
   
     
     <entry>
+      <title>感知机</title>
+      <link href="/%E6%84%9F%E7%9F%A5%E6%9C%BA/"/>
+      <url>/%E6%84%9F%E7%9F%A5%E6%9C%BA/</url>
+      <content type="html"><![CDATA[<p>二分类的<strong>线性</strong>分类模型，输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机对应于输入空间中将实例划分为正负两类的分离超平面，属于<strong>判别模型</strong>。<br>感知机的学习旨在最小化分类误差，所以引入基于误分类的误差函数，通过梯度下降法最小化误差函数求得感知机。 </p><h2 id="感知机算法学习思路："><a href="#感知机算法学习思路：" class="headerlink" title="感知机算法学习思路："></a>感知机算法学习思路：</h2><p>自己通过学习《统计学习方法》，对感知机有一些浅薄的理解，整理出了以下几个问题。通过回答以下问题可以了解感知机的具体思路。</p><ol><li>什么是感知机模型？</li><li>怎么求感知机模型(求的是什么)？</li><li>损失函数是什么(为什么要用损失函数)？</li><li>通过什么方法习得感知机模型(通过什么方法求得最小的损失函数)？</li><li>为什么一定可以习得感知机模型(算法的收敛性证明)</li><li>怎么优化这个算法(感知机的对偶形式)</li></ol><h2 id="感知机模型"><a href="#感知机模型" class="headerlink" title="感知机模型"></a>感知机模型</h2><p>输入空间到输出空间函数($w$ 是超平面的法向量，$b$是法向量的截距)：<br>$$ f(x) = sign(w * x + b)$$</p><h2 id="感知机学习策略"><a href="#感知机学习策略" class="headerlink" title="感知机学习策略"></a>感知机学习策略</h2><ul><li>定义：数据集的线性可分性:    </li></ul><p>习得感知机模型的思路：    </p><ul><li>目标：求得感知机就是求出超平面，也就是求出$w$与$x$两个变量。  </li><li>方法：为了求最合适的$w$与$x$，创造出损失函数，这样求感知机的问题就转化为损失函数最小化的问题。</li><li>问题：    <code>1. 如何确定损失函数？    2. 通过和种方法将损失函数降到最小？</code></li></ul><h3 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h3><p>最容易想到损失函数就是误分类点的个数，但是这样的函数不是参数$w$与$b$的连续可导函数，不方便优化。<br>感知机采用的损失函数是误分类点到超平面的总距离(是参数$w$、$b$ 的可导函数)  </p><pre><code class="diff">+ 为什么是这个定义？？？</code></pre><ul><li>空间任意一点到超平面的距离：  </li><li>误分类点到超平面的距离：</li><li>误分类点到超平面的总距离：</li><li>经过简化习得损失函数：</li></ul><pre><code class="diff">+ ！！！为啥不考虑 $\frac{1}{\| w\|}$</code></pre><h3 id="损失函数最小化"><a href="#损失函数最小化" class="headerlink" title="损失函数最小化"></a>损失函数最小化</h3><p>采用 <a href="https://ahscuml.github.io/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/"><code>随机梯度下降法(SGD)</code></a></p><h3 id="算法的收敛性证明"><a href="#算法的收敛性证明" class="headerlink" title="算法的收敛性证明"></a>算法的收敛性证明</h3><ul><li>定理2.1(Novikoff):<br>前提是数据集是线性可分数据集。  <ul><li>定理表明，误分类的次数$k$是有上界的，经过有限次搜索可以找到将训练数据完全正确分开的分离超平面。  </li><li>当训练数据集线性可分时，感知机学习算法原始形式迭代是收敛的。  </li><li>感知机学习算法存在许多解，这些解既依赖于处置的选择，也依赖于迭代过程中误分类点的选择顺序。</li></ul></li></ul><hr><h2 id="感知机学习算法-摘自《统计学习方法》"><a href="#感知机学习算法-摘自《统计学习方法》" class="headerlink" title="感知机学习算法(摘自《统计学习方法》)"></a>感知机学习算法(摘自《统计学习方法》)</h2><h3 id="学习算法原始形式"><a href="#学习算法原始形式" class="headerlink" title="学习算法原始形式"></a>学习算法原始形式</h3><p><a href="https://blog.csdn.net/dcrmg/article/details/52416832" target="_blank" rel="noopener">数学知识，点积与叉积</a><br><img src="http://ww1.sinaimg.cn/large/7f349269ly1ftn31waqzcj20vm09paco.jpg" alt="学习算法原始形式"></p><ul><li>采用<strong>随机梯度下降法</strong><br>随机梯度下降算法的具体应用。<br><img src="http://ww1.sinaimg.cn/large/7f349269ly1ftn3445t8zj20ty0imgsp.jpg" alt="感知机学习算法原始形式"></li></ul><p>感知机学习算法由于采用不同的初值或选取不同的误分类点，解可以不同。<br>当训练数据集<a href="https://en.wikipedia.org/wiki/Linear_separability" target="_blank" rel="noopener">线性可分</a>时，感知机学习算法原始形式迭代是收敛的(一定有解)</p><h3 id="感知机学习算法对偶形式"><a href="#感知机学习算法对偶形式" class="headerlink" title="感知机学习算法对偶形式"></a>感知机学习算法对偶形式</h3><p>对偶形式的目的是降低运算量：样本点的特征向量以内积的形式存在于感知机对偶形式的算法中，因此，如果事先计算好所有的内积，也就是Gram矩阵，就可以大大地加快计算速度。<br><img src="http://ww1.sinaimg.cn/large/7f349269ly1ftnalbv4cvj20mn0fa0uo.jpg" alt="感知机对偶形式内容"><br><img src="http://ww1.sinaimg.cn/large/7f349269ly1ftnajuec9lj20ob0obwfu.jpg" alt="感知机对偶形式算法"></p>]]></content>
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 梯度下降 </tag>
+            
+            <tag> 感知机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>梯度下降</title>
       <link href="/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/"/>
       <url>/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/</url>
@@ -203,16 +230,16 @@
   
     
     <entry>
-      <title>Timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>Tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>Tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>Timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
