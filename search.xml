@@ -6,7 +6,7 @@
       <title>梯度下降</title>
       <link href="/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/"/>
       <url>/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/</url>
-      <content type="html"><![CDATA[<p>梯度下降是机器学习中非常重要的一种方法。</p><h2 id="什么是梯度"><a href="#什么是梯度" class="headerlink" title="什么是梯度"></a>什么是梯度</h2><p>标量场中某一点的梯度指向在这点标量场增长最快的方向<br>梯度的绝对值是长度为1的方向中函数最大的增加率<br>以下为引出梯度的逻辑顺序（高等数学）：</p><ul><li>导数: 一元函数变化率</li><li>偏导数: 多元函数 函数沿坐标轴方向的变化率</li><li>方向导数: 多元函数，函数沿任意方向的变化率  </li><li>梯度: 是一个向量，方向是方向导数取得最大值的方向，模等于方向导数的最大值。<h2 id="什么是梯度下降法-Gradient-Descent"><a href="#什么是梯度下降法-Gradient-Descent" class="headerlink" title="什么是梯度下降法(Gradient Descent)"></a>什么是梯度下降法(Gradient Descent)</h2>明白了梯度的概念，对于梯度下降法的概念也很容易理解了。梯度是增长最快的方向，只需要向梯度相反的方向就是函数下降最快的方向(垂直方向增长率为0)，不断向梯度下降最快的方向移动可以求出局部极小值。<br><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95" target="_blank" rel="noopener">梯度下降法</a>（英语：Gradient descent）是一个一阶最优化算法，通常也称为最速下降法。 要使用梯度下降法找到一个函数的局部极小值，必须向函数上当前点对应梯度（或者是近似梯度）的反方向的规定步长距离点进行迭代搜索。    </li></ul><h2 id="什么是随机梯度下降法-Stochastic-Gradient-Descent"><a href="#什么是随机梯度下降法-Stochastic-Gradient-Descent" class="headerlink" title="什么是随机梯度下降法 (Stochastic Gradient Descent)"></a>什么是随机梯度下降法 (Stochastic Gradient Descent)</h2><p>与梯度下降不同，随机梯度下降就是每次只随机选取一个样本，用这个样本来寻找下降的梯度。虽然这样子不如梯度下降精确，但是这样可以在前期更快的下降，而且结果也是在极小值附近。但是到后期可能会在极值点左右摆动。</p><h2 id="什么是批量梯度下降-Batch-Gradient-Descent"><a href="#什么是批量梯度下降-Batch-Gradient-Descent" class="headerlink" title="什么是批量梯度下降(Batch Gradient Descent)"></a>什么是批量梯度下降(Batch Gradient Descent)</h2><p>介于梯度下降与随机梯度下降之间的一种方法。梯度下降选取所有的样本，随机梯度下降只选取一个样本，批量梯度下降则选取一个批量的样本来计算梯度。</p><h2 id="随机梯度下降与梯度下降比较-随机梯度下降的优势"><a href="#随机梯度下降与梯度下降比较-随机梯度下降的优势" class="headerlink" title="随机梯度下降与梯度下降比较(随机梯度下降的优势)"></a>随机梯度下降与梯度下降比较(<a href="https://zhuanlan.zhihu.com/p/28060786" target="_blank" rel="noopener">随机梯度下降的优势</a>)</h2><ul><li>相对于非随机算法，SGD 能更有效的利用信息，特别是信息比较冗余的时候。</li><li>相对于非随机算法， SGD 在前期迭代效果卓越。</li><li>如果样本数量大，那么 SGD的Computational Complexity 依然有优势。</li></ul>]]></content>
+      <content type="html"><![CDATA[<p>梯度下降是机器学习中非常重要的一种方法。</p><h2 id="什么是梯度"><a href="#什么是梯度" class="headerlink" title="什么是梯度"></a>什么是梯度</h2><p>标量场中某一点的梯度指向在这点标量场增长最快的方向<br>梯度的绝对值是长度为1的方向中函数最大的增加率<br>以下为引出梯度的逻辑顺序（高等数学）：</p><ul><li>导数: 一元函数变化率</li><li>偏导数: 多元函数 函数沿坐标轴方向的变化率</li><li>方向导数: 多元函数，函数沿任意方向的变化率  </li><li>梯度: 是一个向量，方向是方向导数取得最大值的方向，模等于方向导数的最大值。</li></ul><h2 id="什么是梯度下降法-Gradient-Descent"><a href="#什么是梯度下降法-Gradient-Descent" class="headerlink" title="什么是梯度下降法(Gradient Descent)"></a>什么是梯度下降法(Gradient Descent)</h2><p>明白了梯度的概念，对于梯度下降法的概念也很容易理解了。梯度是增长最快的方向，只需要向梯度相反的方向就是函数下降最快的方向(垂直方向增长率为0)，不断向梯度下降最快的方向移动可以求出局部极小值。<br><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95" target="_blank" rel="noopener">梯度下降法</a>（英语：Gradient descent）是一个一阶最优化算法，通常也称为最速下降法。 要使用梯度下降法找到一个函数的局部极小值，必须向函数上当前点对应梯度（或者是近似梯度）的反方向的规定步长距离点进行迭代搜索。    </p><h2 id="什么是随机梯度下降法-Stochastic-Gradient-Descent"><a href="#什么是随机梯度下降法-Stochastic-Gradient-Descent" class="headerlink" title="什么是随机梯度下降法 (Stochastic Gradient Descent)"></a>什么是随机梯度下降法 (Stochastic Gradient Descent)</h2><p>与梯度下降不同，随机梯度下降就是每次只随机选取一个样本，用这个样本来寻找下降的梯度。虽然这样子不如梯度下降精确，但是这样可以在前期更快的下降，而且结果也是在极小值附近。但是到后期可能会在极值点左右摆动。</p><h2 id="什么是批量梯度下降-Batch-Gradient-Descent"><a href="#什么是批量梯度下降-Batch-Gradient-Descent" class="headerlink" title="什么是批量梯度下降(Batch Gradient Descent)"></a>什么是批量梯度下降(Batch Gradient Descent)</h2><p>介于梯度下降与随机梯度下降之间的一种方法。梯度下降选取所有的样本，随机梯度下降只选取一个样本，批量梯度下降则选取一个批量的样本来计算梯度。</p><h2 id="随机梯度下降与梯度下降比较-随机梯度下降的优势"><a href="#随机梯度下降与梯度下降比较-随机梯度下降的优势" class="headerlink" title="随机梯度下降与梯度下降比较(随机梯度下降的优势)"></a>随机梯度下降与梯度下降比较(<a href="https://zhuanlan.zhihu.com/p/28060786" target="_blank" rel="noopener">随机梯度下降的优势</a>)</h2><ul><li>相对于非随机算法，SGD 能更有效的利用信息，特别是信息比较冗余的时候。</li><li>相对于非随机算法， SGD 在前期迭代效果卓越。</li><li>如果样本数量大，那么 SGD的Computational Complexity 依然有优势。</li></ul>]]></content>
       
       <categories>
           
@@ -203,16 +203,16 @@
   
     
     <entry>
-      <title>Tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>Timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>Timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>Tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
