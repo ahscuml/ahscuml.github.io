@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>最大子序列</title>
+      <link href="/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%88%97/"/>
+      <url>/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%88%97/</url>
+      <content type="html"><![CDATA[<p>最大子序列，也可以理解为最大子序列和问题，做LeetCode的<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/" target="_blank" rel="noopener">第121题</a>的时候用到了这个内容，看了看Discuss发现解法非常简单，但是道理却不简单，正好数据结构与算法分析中也有这部分的内容，正好整理出来，也是自己理清思路。<br>具体每一个算法的思路都通过注释的形式放到了代码里，也方便理解。    </p><pre><code class="问题：给定数组array，求这个数组的最大子序列。```">## 最容易想到的方法 穷举法时间复杂度O(N^3)```java/** * @author ahscuml * @date 2018/8/14 * @time 21:35 */public class BruteForce {    public static int MaxSubArray(int[] array) {        // 子序列最大值        int max = array[0];        // 最大子序列的左右下标        int left = 0,right = 0;        for (int i = 0; i &lt; array.length; i++) {            for (int j = 0; j &lt;= i; j++) {                // 这是这次循环的值,默认为0                int cyclemax = 0;                for (int k = j; k &lt;= i; k++) {                    cyclemax += array[k];                }                // 保存最大子序列的左右下标                if (cyclemax &gt; max) {                    left = j;                    right = i;                    max = cyclemax;                }            }        }        // 输出最大子序列        for (int i = left; i &lt;=right ; i++) {            System.out.print(array[i] + &quot; &quot;);        }        System.out.println();        return max;    }}</code></pre><h2 id="穷举法的改进"><a href="#穷举法的改进" class="headerlink" title="穷举法的改进"></a>穷举法的改进</h2><p>时间复杂度O(N^2)</p><pre><code class="java">/** * @author ahscuml * @date 2018/8/14 * @time 22:16 */public class BruteForceOpt {    public static int MaxSubArray(int[] array) {        // 子序列最大值        int max = array[0];        // 最大子序列的左右下标        int left = 0, right = 0;        for (int i = 0; i &lt; array.length; i++) {            // 这是这次循环的值,默认为0            int cyclemax = 0;            for (int j = i; j &gt;= 0; j--) {                // 替换了内部的一个循环，减少了不必要的计算，降低复杂度                cyclemax += array[j];                // 保存最大子序列的左右下标                if (cyclemax &gt; max) {                    left = j;                    right = i;                    max = cyclemax;                }            }        }        // 输出最大子序列        for (int i = left; i &lt;= right; i++) {            System.out.print(array[i] + &quot; &quot;);        }        System.out.println();        return max;    }}</code></pre><h2 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h2><p>时间复杂度O(NlogN)</p><pre><code class="java">/** * @author ahscuml * @date 2018/8/14 * @time 22:22 */public class Recursion {    private static int maxSubArrayRec(int[] array, int left, int right) {        // 递归最基本的情况，如果只有一个数字，不用递归。        if (left == right) {            if (array[left] &gt; 0) {                return array[left];            } else {                return 0;            }        }        // 递归的两种情况，左边最大和右边最大        int center = (left + right) / 2;        int maxLeftSum = maxSubArrayRec(array, left, center);        int maxRightSum = maxSubArrayRec(array, center + 1, right);        // 递归的第三种情况，中间最大，但是中间最大需要计算左边加上边界最大和右边加上边界最大        int maxLeftBorderSum = 0, leftBorderSum = 0;        for (int i = center; i &gt;= left; i--) {            leftBorderSum += array[i];            if (leftBorderSum &gt; maxLeftBorderSum) {                maxLeftBorderSum = leftBorderSum;            }        }        int maxRightBorderSum = 0, rightBorderSum = 0;        for (int i = center + 1; i &lt;= right; i++) {            rightBorderSum += array[i];            if (rightBorderSum &gt; maxRightBorderSum) {                maxRightBorderSum = rightBorderSum;            }        }        // 返回三种情况的最大值        return Math.max(maxLeftBorderSum, Math.max(maxRightSum, maxLeftBorderSum + maxRightBorderSum));    }    public static int maxSubArray(int[] array) {        return maxSubArrayRec(array, 0, array.length - 1);    }}</code></pre><h2 id="Kadane算法"><a href="#Kadane算法" class="headerlink" title="Kadane算法"></a><a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane&#39;s_algorithm" target="_blank" rel="noopener">Kadane算法</a></h2><p>时间复杂度O(N)，动态规划算法。<br>Kadane的算法以一个简单的归纳问题开始：如果我们知道在位置i结束的最大子阵列和，那么在位置 i + 1 处结束的最大子阵列总和是多少？ 答案结果相对简单：在位置 i + 1 结束的最大子阵列和包括在位置i结束的最大子阵列和作为前缀，或者它不包括。 因此，我们可以通过在数组上迭代一次来计算在所有位置i的位置i处结束的最大子阵列和。 当我们走的时候，我们只是跟踪我们所见过的最大数值。</p><pre><code class="java">/** * @author ahscuml * @date 2018/8/14 * @time 22:51 */public class Easy {    public static int maxSubArrary(int[] array) {        // maxSum是最大子序列的和，thisSum是以当前为终点的最大子序列的和        int maxSum = array[0], thisSum = 0;        // leftpre是以当前为终点的最大子序列的和的左下标，left是最大子序列和的下标，right是最大子序列和的右下标        int leftpre = 0, left = 0, right = 0;        for (int i = 0; i &lt; array.length; i++) {            thisSum += array[i];            if (thisSum &gt; maxSum) {                maxSum = thisSum;                right = i;                left = leftpre;            } else if (thisSum &lt; 0) {                thisSum = 0;                if (i != array.length - 1) {                    leftpre = i + 1;                }            }        }        // 输出最大子序列        for (int i = left; i &lt;= right; i++) {            System.out.print(array[i] + &quot; &quot;);        }        System.out.println();        return maxSum;    }}</code></pre>]]></content>
+      
+      <categories>
+          
+          <category> 算法与数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 动态规划 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>统计学习方法概论</title>
       <link href="/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E6%A6%82%E8%AE%BA/"/>
       <url>/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E6%A6%82%E8%AE%BA/</url>
