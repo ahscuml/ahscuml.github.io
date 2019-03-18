@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>Maven</title>
+      <link href="/Maven/"/>
+      <url>/Maven/</url>
+      <content type="html"><![CDATA[<h2 id="Maven项目目录结构"><a href="#Maven项目目录结构" class="headerlink" title="Maven项目目录结构"></a>Maven项目目录结构</h2><p><img src="http://ww1.sinaimg.cn/large/7f349269ly1g17a5zc3rhj204f04owe9.jpg" alt="maven目录结构"></p><h2 id="Maven命令"><a href="#Maven命令" class="headerlink" title="Maven命令"></a>Maven命令</h2><p>mvn</p><ul><li>-v 查看maven版本</li><li>compile 编译</li><li>test 测试</li><li>package 打包</li><li>clean 删除target</li><li>install 安装jar包到本地仓库中</li></ul><p>compile首先去pom文件中的dependencies查找依赖，然后去本地仓库中查找，如果本地仓库中没有，就去中央仓库查找(groupId,artifactId,version)    </p><h2 id="自动构建目录"><a href="#自动构建目录" class="headerlink" title="自动构建目录"></a>自动构建目录</h2><p>自动创建目录的两种方式：</p><ol><li>archetype:generate 按照提示进行选择(groupId,artifactId,version,package)</li><li>archetype:generate -DgroupId=组织名，公司网址的反写+项目名 -DartifactId=项目名-模块名 -Dversion=版本号 -Dpackage=代码所存在的包名</li></ol><h2 id="Maven中的坐标和仓库"><a href="#Maven中的坐标和仓库" class="headerlink" title="Maven中的坐标和仓库"></a>Maven中的坐标和仓库</h2><p>坐标(构件)(groupId,artifactId,version)<br>仓库</p><ul><li>本地仓库</li><li>中央仓库</li><li>镜像仓库(添加镜像仓库，更改本地仓库位置)</li></ul><h2 id="Maven生命周期"><a href="#Maven生命周期" class="headerlink" title="Maven生命周期"></a>Maven生命周期</h2><p>完整的项目构建过程包括：清理、编译、测试、打包、集成测试、验证、部署  </p><p>Maven声明周期：</p><ul><li>clean 清理项目</li><li>default 构建项目</li><li>site 生成项目站点</li></ul><p>clean、compile、test、package、install  </p><p>clean清理项目</p><ul><li>pre-clean 执行清理前的工作</li><li>clean 清理上一次构建生成的所有文件</li><li>post-clean 执行清理后的文件</li></ul><p>default 构建项目(最核心)  </p><ul><li>compile、test、package、install</li></ul><p>site 生成项目站点</p><ul><li>pre-site 在生成项目站点前要完成的工作</li><li>site 生成项目的站点文档</li><li>post-site 在生成项目站点后要完成的工作</li><li>site-deploy 发布生成的站点到服务器上</li></ul><h2 id="pom解析"><a href="#pom解析" class="headerlink" title="pom解析"></a>pom解析</h2><h2 id="maven依赖范围"><a href="#maven依赖范围" class="headerlink" title="maven依赖范围"></a>maven依赖范围</h2><p>pom中的scope(范围)： 测试，编译，运行</p><ul><li>compile 编译测试运行都有效</li><li>provided 在编译和测试的时候有效</li><li>runtime 在测试和运行时有效</li><li>test 只在测试时有效</li><li>system 与本机系统相关联，可移植性差</li><li>import 导入范围，只在使用dependencyManagement中，表示从其它的pom中导入dependecy的配置</li></ul><h2 id="maven依赖的传递"><a href="#maven依赖的传递" class="headerlink" title="maven依赖的传递"></a>maven依赖的传递</h2><h2 id="maven构建web项目"><a href="#maven构建web项目" class="headerlink" title="maven构建web项目"></a>maven构建web项目</h2>]]></content>
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>树的遍历</title>
       <link href="/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
       <url>/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/</url>
@@ -115,9 +136,9 @@
             
             <tag> 梯度下降 </tag>
             
-            <tag> 统计学习方法 </tag>
-            
             <tag> 感知机 </tag>
+            
+            <tag> 统计学习方法 </tag>
             
         </tags>
       
