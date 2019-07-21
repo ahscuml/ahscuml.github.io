@@ -6,7 +6,7 @@
       <title>OKR工作法</title>
       <link href="/OKR%E5%B7%A5%E4%BD%9C%E6%B3%95/"/>
       <url>/OKR%E5%B7%A5%E4%BD%9C%E6%B3%95/</url>
-      <content type="html"><![CDATA[<h2 id="什么是OKR工作法"><a href="#什么是OKR工作法" class="headerlink" title="什么是OKR工作法"></a>什么是OKR工作法</h2><p>OKR(Objective and Key Results，目标与战略结果), 战略目标任务体系。<br>O(目标)：有挑战，可衡量的目标<br>KR(关键结果):为了达成目标的关键行动</p><p>目标管理法基于两个原则</p><ol><li><code>不要告诉下属具体怎么做，只告诉他们你想要什么，他们就会给你满意的结果</code></li><li><code>用关键结果衡量工作绩效</code></li></ol><h2 id="如何应用OKR工作法"><a href="#如何应用OKR工作法" class="headerlink" title="如何应用OKR工作法"></a>如何应用OKR工作法</h2><ul><li>设定一个关键目标<ul><li>通常是企业的使命：我们通过(什么样的价值主张)，在(什么领域或行业)(改善人们的生活或减少人们的痛苦)</li></ul></li><li>针对目标，设置三个关键成果来衡量这个目标<ul><li>每个KR都要设置<em>信心指数</em>，默认是50%，每周开会更新信心指数</li></ul></li><li>状态指标：影响目标达成的因素，完成OKR的保障</li><li>本周关注的任务：列出三件最重要的事情</li><li>未来四周的计划:哪些需要做好准备或支持的</li></ul><p>最终输出一个OKR象限图：<br><a href="http://ww1.sinaimg.cn/large/7f349269ly1g57vq98gu6j20du0a774m.jpg" target="_blank" rel="noopener">OKR象限图</a></p><h2 id="无法达到目标的五个关键因素"><a href="#无法达到目标的五个关键因素" class="headerlink" title="无法达到目标的五个关键因素"></a>无法达到目标的五个关键因素</h2><ol><li>没有给目标设置优先级</li></ol><ul><li>设定单一的目标，用三个关键结果来衡量它，一次只完成一个目标</li></ul><ol start="2"><li>缺乏充分沟通，导致没能准确理解目标</li></ol><ul><li>周一会议确定每个人的职责，周五会议重复本阶段的目标</li></ul><ol start="3"><li>没有做好计划</li></ol><ul><li>需要一个目标管理系统记录重要的事情</li></ul><ol start="4"><li>没有把时间花在重要的事情上</li></ol><ul><li>应用重要紧急矩阵</li></ul><ol start="5"><li>轻易放弃</li></ol><ul><li>失败后不断尝试</li></ul>]]></content>
+      <content type="html"><![CDATA[<h2 id="什么是OKR工作法"><a href="#什么是OKR工作法" class="headerlink" title="什么是OKR工作法"></a>什么是OKR工作法</h2><p>OKR(Objective and Key Results，目标与战略结果), 战略目标任务体系。<br>O(目标)：有挑战，可衡量的目标<br>KR(关键结果):为了达成目标的关键行动</p><p>目标管理法基于两个原则</p><ol><li><code>不要告诉下属具体怎么做，只告诉他们你想要什么，他们就会给你满意的结果</code></li><li><code>用关键结果衡量工作绩效</code></li></ol><h2 id="如何应用OKR工作法"><a href="#如何应用OKR工作法" class="headerlink" title="如何应用OKR工作法"></a>如何应用OKR工作法</h2><ul><li>设定一个关键目标<ul><li>通常是企业的使命：我们通过(什么样的价值主张)，在(什么领域或行业)(改善人们的生活或减少人们的痛苦)</li></ul></li><li>针对目标，设置三个关键成果来衡量这个目标<ul><li>每个KR都要设置<em>信心指数</em>，默认是50%，每周开会更新信心指数</li></ul></li><li>状态指标：影响目标达成的因素，完成OKR的保障</li><li>本周关注的任务：列出三件最重要的事情</li><li>未来四周的计划:哪些需要做好准备或支持的</li></ul><p>最终输出一个OKR象限图：<br><img src="http://ww1.sinaimg.cn/large/7f349269ly1g57vq98gu6j20du0a774m.jpg" alt="OKR象限图"></p><h2 id="无法达到目标的五个关键因素"><a href="#无法达到目标的五个关键因素" class="headerlink" title="无法达到目标的五个关键因素"></a>无法达到目标的五个关键因素</h2><ol><li>没有给目标设置优先级</li></ol><ul><li>设定单一的目标，用三个关键结果来衡量它，一次只完成一个目标</li></ul><ol start="2"><li>缺乏充分沟通，导致没能准确理解目标</li></ol><ul><li>周一会议确定每个人的职责，周五会议重复本阶段的目标</li></ul><ol start="3"><li>没有做好计划</li></ol><ul><li>需要一个目标管理系统记录重要的事情</li></ul><ol start="4"><li>没有把时间花在重要的事情上</li></ol><ul><li>应用重要紧急矩阵</li></ul><ol start="5"><li>轻易放弃</li></ol><ul><li>失败后不断尝试</li></ul>]]></content>
       
       <categories>
           
@@ -155,11 +155,11 @@
             
             <tag> 机器学习 </tag>
             
-            <tag> 统计学习方法 </tag>
-            
             <tag> 梯度下降 </tag>
             
             <tag> 感知机 </tag>
+            
+            <tag> 统计学习方法 </tag>
             
         </tags>
       
@@ -366,16 +366,16 @@
   
     
     <entry>
-      <title>Tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>Timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>Timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>Tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
