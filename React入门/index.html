@@ -45,7 +45,7 @@
     
     <title>
         
-            标签: Java | 
+            React入门 | 
         
         ahscuml
     </title>
@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="Stay hungry, stay foolish.">
-    <meta name="keywords" content="Code">
+    <meta name="keywords" content="Code,前端,React">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -212,7 +212,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="ahscuml">
-    <meta name="msapplication-starturl" content="https://ahscuml.github.io/tags/Java/">
+    <meta name="msapplication-starturl" content="https://ahscuml.github.io/React入门/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="ahscuml">
@@ -227,13 +227,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://ahscuml.github.io/tags/Java/">
+    <meta property="og:url" content="https://ahscuml.github.io/React入门/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: Java | ahscuml">
+    <meta property="og:title" content="React入门 | ahscuml">
     <meta property="og:image" content="http://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg">
     <meta property="og:description" content="Stay hungry, stay foolish.">
-    
+    <meta property="og:article:tag" content="前端"> <meta property="og:article:tag" content="React"> 
 
+    
+        <meta property="article:published_time" content="Tue Jul 23 2019 22:50:36 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jul 23 2019 22:49:49 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -241,13 +244,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://ahscuml.github.io/tags/Java/index.html" />
+        <link rel="canonical" href="https://ahscuml.github.io/React入门/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://ahscuml.github.io/React入门/index.html",
+    "headline": "React入门",
+    "datePublished": "Tue Jul 23 2019 22:50:36 GMT+0800",
+    "dateModified": "Tue Jul 23 2019 22:49:49 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "ahscuml",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "Things change, roll with it!"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ahscuml",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "http://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg"
+        }
+    },
+    "keywords": ",前端,ReactCode",
+    "description": "Stay hungry, stay foolish.",
+}
+</script>
 
 
     
@@ -290,97 +323,494 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#点赞按钮的例子"><span class="post-toc-number">1.</span> <span class="post-toc-text">点赞按钮的例子</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#利用state存储状态例子"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">利用state存储状态例子</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#维持组件可重复利用"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">维持组件可重复利用</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#利用props来重用组件"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">利用props来重用组件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#如何设置默认值"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">如何设置默认值</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://ww1.sinaimg.cn/large/7f349269ly1ftmelbhfs5j20t60jgaew.jpg">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://ww1.sinaimg.cn/large/7f349269ly1g5a5q2pcnoj21gr0wzq3u.jpg)">
+    
+            <p class="article-headline-p">
+                React入门
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ahscuml</strong>
+        <span>7月 23, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=https://ahscuml.github.io/React入门/">
+    
+</ul>
+
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/Objects与Object/">Object 与 Objects</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/React/">React</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/前端/">前端</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
         
-            看书看到Object,后来又看到了Objects,这两个非常相似，为了更加清晰的找出两者的不同，特地收录进来。
-
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
         
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/Objects与Object/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="ahscuml's avatar">
-            </div>
-            <div>
-                <strong>ahscuml</strong>
-                <span>3月 18, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Java/">Java</a>
-              </span>
-            
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=React入门&url=https://ahscuml.github.io/React入门/index.html&pic=https://ahscuml.github.iohttp://ww1.sinaimg.cn/thumbnail/7f349269ly1ftmfalpq40j205h0740sk.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React入门&url=https://ahscuml.github.io/React入门/index.html&via=ahscuml" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ahscuml.github.io/React入门/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ahscuml.github.io/React入门/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
-            
-            
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram 的网站。做出来以后，发现这套东西很好用，就在2013年5月开源了。</p>
+<p>参考资料</p>
+<ul>
+<li><a href="https://react.docschina.org/tutorial/tutorial.html#overview" target="_blank" rel="noopener">React官方教程</a></li>
+<li><a href="http://huziketang.mangojuice.top/books/react/lesson12" target="_blank" rel="noopener">React.js小书</a></li>
+</ul>
+<ol>
+<li><p>什么是JSX<br><img src="http://ww1.sinaimg.cn/large/7f349269ly1g50bdcj2gwj20hm075aaq.jpg" alt="jsx"></p>
+</li>
+<li><p><a href="http://huziketang.mangojuice.top/books/react/lesson7" target="_blank" rel="noopener">render方法</a></p>
+</li>
+</ol>
+<ul>
+<li>React.js中一切皆组件。一个组件类必须要实现一个 render 方法，这个 render 方法必须要返回一个 JSX 元素。但这里要注意的是，必须要用一个外层的 JSX 元素把所有内容包裹起来。返回并列多个 JSX 元素是不合法的</li>
+<li>在 JSX 当中你可以插入 JavaScript 的表达式，表达式返回的结果会相应地渲染到页面上。表达式用 {} 包裹。<ul>
+<li>利用JSX可以增加一些逻辑性的东西，或者组合一些内容</li>
+</ul>
+</li>
+<li>自定义的组件都<strong>必须要</strong>用大写字母开头，普通的 HTML 标签都用小写字母开头。</li>
+<li>通过在其它地方使用组件的标签，我们就可以插入一个组件，这样子在这个地方就会调用标签组件的render方法，非常利于组件的重复利用，多个不同的组件可以组成组件树(构建一个页面的逻辑)</li>
+<li>为 React 的组件添加事件监听是很简单的事情，你只需要使用 React.js 提供了一系列的 on<em> 方法即可。React.js 会给每个事件监听传入一个 <strong>event 对象</strong>，这个对象提供的功能和浏览器提供的功能一致，而且它是兼容所有浏览器的。React.js 的事件监听方法需要<strong>手动 bind 到当前实例</strong>，这种模式在 React.js 中非常常用。这些 on</em> 的事件监听只能用在普通的 HTML 的标签上，而<strong>不能用在组件标签上</strong>。</li>
+<li>bind的作用：如果你想在事件函数当中使用当前的实例，你需要手动地将实例方法 bind 到当前实例上再传入给 React.js。</li>
+</ul>
+<ol start="3">
+<li><a href="http://huziketang.mangojuice.top/books/react/lesson10" target="_blank" rel="noopener">state与props</a></li>
+</ol>
+<ul>
+<li><strong>一个组件的显示形态是由这个组件的数据状态(state)和配置参数(props)决定的</strong></li>
+<li>state<ul>
+<li>state 的主要作用是用于组件保存、控制、修改<strong>自己的可变状态</strong>。state 在组件内部初始化，可以被组件自身修改，而<strong>外部不能访问也不能修改</strong>。你可以认为 state 是一个局部的、只能被组件自身控制的数据源。state 中状态可以通过 this.setState 方法进行更新，setState 会导致组件的重新渲染。</li>
+<li>setstate:setState 方法由父类 Component 所提供。当我们调用这个函数的时候，React.js 会更新组件的状态 state ，并且<strong>重新调用 render 方法</strong>，然后再把 render 方法所渲染的最新的内容显示到页面上。它接受一个对象或者函数作为参数。</li>
+<li>当你调用 setState 的时候，React.js 并不会马上修改 state。而是把这个对象放到一个更新队列里面，稍后才会从队列当中把新的状态提取出来合并到 state 当中，然后再触发组件更新。</li>
+<li>并不是每一次调用setState方法都会重新调用render方法，而是将对同一state的修改集合到一起再去同一渲染</li>
+<li><a href="https://imweb.io/topic/5b189d04d4c96b9b1b4c4ed6" target="_blank" rel="noopener">React中的setState方法</a>:setState是异步执行的，所以需要一些方法来控制</li>
+<li>props<ul>
+<li>props 的主要作用是让使用该组件的父组件可以传入参数来配置该组件。它是外部传进来的配置参数，组件内部无法控制也无法修改。除非外部组件主动传入新的 props，否则组件的 props 永远保持不变</li>
+<li>每个组件都可以接受一个 props 参数，它是一个对象，包含了所有你对这个组件的配置。</li>
+<li>在使用一个组件的时候，可以把参数放在标签的属性当中，所有的属性都会作为 props 对象的键值</li>
+<li>React.js 也提供了一种方式 defaultProps，可以方便的做到默认配置。</li>
+<li><strong>props 一旦传入进来就不能改变。</strong></li>
+<li>组件的使用者可以主动地通过重新渲染的方式把新的 props 传入组件当中，这样这个组件中由 props 决定的显示形态也会得到相应的改变。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li><a href="https://www.runoob.com/react/react-component-life-cycle.html" target="_blank" rel="noopener">React组件生命周期</a> </li>
+</ol>
+<ul>
+<li>React<ul>
+<li>JavaScript<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">箭头函数</a></li>
+<li>bind，如果你想在事件函数当中使用当前的实例，你需要手动地将实例方法 bind 到当前实例上再传入给 React.js。 相当于通过bind(this)来完成一个绑定当前实例的工作，方便在方法内调用实例的方法以及state状态或者props</li>
+<li>挂载阶段的组件生命周期<ul>
+<li>挂载的概念：React.js 将组件渲染，并且构造 DOM 元素然后塞入页面的过程称为组件的挂载</li>
+<li>构建组件的生命周期<ul>
+<li>-&gt; constructor()</li>
+<li>-&gt; componentWillMount()</li>
+<li>-&gt; render()</li>
+<li>-&gt; componentDidMount()</li>
+</ul>
+</li>
+<li>生命周期中的作用<ul>
+<li>我们一般会把组件的 state 的初始化工作放在 constructor 里面去做；</li>
+<li>componentWillMount：在 componentWillMount 进行组件的启动工作，例如 Ajax 数据拉取、定时器的启动；</li>
+<li>componentWillUnmount：组件从页面上销毁的时候，有时候需要一些数据的清理，例如定时器的清理，就会放在 componentWillUnmount 里面去做。</li>
+<li>componentDidMount： 一般来说，有些组件的启动工作是依赖 DOM 的，例如动画的启动，而 componentWillMount 的时候组件还没挂载完成，所以没法进行这些启动工作，这时候就可以把这些操作放在 componentDidMount 当中。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>更新阶段的组件生命周期<ul>
+<li>componentWillReceiveProps</li>
+<li>componentWillUpdate</li>
+<li>render</li>
+<li>componentDidUpdate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li><a href="https://imweb.io/topic/5985cc4d35d7d0a321c5eb75" target="_blank" rel="noopener">React渲染机制解析</a></li>
+</ol>
+<ul>
+<li>渲染过程：在页面一开始打开的时候，React会调用render函数构建一棵Dom树，在state/props发生改变的时候，render函数会被再次调用渲染出另外一棵树，接着，React会用对两棵树进行对比，找到需要更新的地方批量改动。</li>
+<li>Diff算法：Diff算法只会对同层的节点进行比较。<a href="https://leohxj.gitbooks.io/front-end-database/html-and-css-basic/learn-dom-tree.html" target="_blank" rel="noopener">DOM结构介绍</a><ul>
+<li>假设1：两个相同的组件产生类似的DOM结构，不同组件产生不同DOM结构</li>
+<li>假设2：对于同一层次的一组子节点，它们可以通过唯一的id区分</li>
+</ul>
+</li>
+<li>比较节点类型<ul>
+<li>节点类型相同<ul>
+<li>DOM元素类型：只改变需要改变的属性</li>
+<li>React组件类型：触发更新过程<ul>
+<li>shouldComponentUpdate</li>
+<li>componentWillReceiveProps</li>
+<li>componentWillUpdate</li>
+<li>render</li>
+<li>componentDidUpdate</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>节点类型不同：直接删除旧节点，创建新节点</li>
+</ul>
+</li>
+</ul>
+<h3 id="点赞按钮的例子"><a href="#点赞按钮的例子" class="headerlink" title="点赞按钮的例子"></a><a href="https://codesandbox.io/s/dianzananniu-f9dhn" target="_blank" rel="noopener">点赞按钮的例子</a></h3><h4 id="利用state存储状态例子"><a href="#利用state存储状态例子" class="headerlink" title="利用state存储状态例子"></a>利用state存储状态例子</h4><pre><code class="javaScript">// 利用state存储状态
+class LikeButton extends Component {
+  constructor () {
+    super()
+    this.state = { isLiked: false }
+  }
+
+  handleClickOnLikeButton () {
+    this.setState({
+      isLiked: !this.state.isLiked
+    })
+  }
+
+  render () {
+    return (
+      &lt;button onClick={this.handleClickOnLikeButton.bind(this)}&gt;
+        {this.state.isLiked ? &#39;取消&#39; : &#39;点赞&#39;} 👍
+      &lt;/button&gt;
+    )
+  }
+}
+</code></pre>
+<h4 id="维持组件可重复利用"><a href="#维持组件可重复利用" class="headerlink" title="维持组件可重复利用"></a>维持组件可重复利用</h4><pre><code class="javaScript">class LikeButton extends Component {
+  constructor () {
+    super()
+    this.state = { isLiked: false }
+  }
+
+  handleClickOnLikeButton () {
+    this.setState({
+      isLiked: !this.state.isLiked
+    })
+  }
+
+  render () {
+    // 设置了渲染的内容，方便后期更改
+    const likedText = this.props.likedText || &#39;取消&#39;
+    const unlikedText = this.props.unlikedText || &#39;点赞&#39;
+    return (
+      &lt;button onClick={this.handleClickOnLikeButton.bind(this)}&gt;
+        {this.state.isLiked ? likedText : unlikedText} 👍
+      &lt;/button&gt;
+    )
+  }
+}
+</code></pre>
+<h4 id="利用props来重用组件"><a href="#利用props来重用组件" class="headerlink" title="利用props来重用组件"></a>利用props来重用组件</h4><pre><code class="javascript">class Index extends Component {
+  render () {
+    return (
+      &lt;div&gt;
+        &lt;LikeButton likedText=&#39;已赞&#39; unlikedText=&#39;赞&#39; /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+</code></pre>
+<h4 id="如何设置默认值"><a href="#如何设置默认值" class="headerlink" title="如何设置默认值"></a>如何设置默认值</h4><p><code>`</code>javascript<br>class LikeButton extends Component {<br>  // 在这里设置默认值<br>  static defaultProps = {<br>    likedText: ‘取消’,<br>    unlikedText: ‘点赞’<br>  }</p>
+<p>  constructor () {<br>    super()<br>    this.state = { isLiked: false }<br>  }</p>
+<p>  handleClickOnLikeButton () {<br>    this.setState({<br>      isLiked: !this.state.isLiked<br>    })<br>  }</p>
+<p>  render () {<br>    return (<br>      <button onclick="{this.handleClickOnLikeButton.bind(this)}"><br>      // 设置过默认值这里就不用再进行判断了<br>        {this.state.isLiked<br>          ? this.props.likedText<br>          : this.props.unlikedText} 👍<br>      </button><br>    )<br>  }<br>}</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            This blog is under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0 Unported License</a>
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://ahscuml.github.io/React入门/">https://ahscuml.github.io/React入门/</a>
+                    </p>
+                </blockquote>
         
     
 
     
+</div>
 
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
 
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
+                
 
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
 
-        locatePost = locatePost.next();
-    }
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #757575;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://ahscuml.github.io/React入门/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://ahscuml.github.io/React入门/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
 </script>
 
-    
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//https-ahscuml-github-io.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//https-ahscuml-github-io.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
 </div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/OKR工作法/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -595,6 +1025,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
