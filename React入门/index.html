@@ -236,7 +236,7 @@
 
     
         <meta property="article:published_time" content="Tue Jul 23 2019 22:50:36 GMT+0800">
-        <meta property="article:modified_time" content="Tue Jul 23 2019 22:53:50 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jul 23 2019 22:56:27 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -259,7 +259,7 @@
     "mainEntityOfPage": "https://ahscuml.github.io/React入门/index.html",
     "headline": "React入门",
     "datePublished": "Tue Jul 23 2019 22:50:36 GMT+0800",
-    "dateModified": "Tue Jul 23 2019 22:53:50 GMT+0800",
+    "dateModified": "Tue Jul 23 2019 22:56:27 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ahscuml",
@@ -352,7 +352,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#点赞按钮的例子"><span class="post-toc-number">1.</span> <span class="post-toc-text">点赞按钮的例子</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#利用state存储状态例子"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">利用state存储状态例子</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#维持组件可重复利用"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">维持组件可重复利用</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#利用props来重用组件"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">利用props来重用组件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#如何设置默认值"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">如何设置默认值</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#什么是JSX"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是JSX</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#render方法"><span class="post-toc-number">2.</span> <span class="post-toc-text">render方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#state与props"><span class="post-toc-number">3.</span> <span class="post-toc-text">state与props</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#React组件生命周期"><span class="post-toc-number">4.</span> <span class="post-toc-text">React组件生命周期</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#React渲染机制解析"><span class="post-toc-number">5.</span> <span class="post-toc-text">React渲染机制解析</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#点赞按钮的例子"><span class="post-toc-number">6.</span> <span class="post-toc-text">点赞按钮的例子</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#利用state存储状态例子"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">利用state存储状态例子</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#维持组件可重复利用"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">维持组件可重复利用</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#利用props来重用组件"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">利用props来重用组件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#如何设置默认值"><span class="post-toc-number">6.4.</span> <span class="post-toc-text">如何设置默认值</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -516,13 +516,8 @@
 <li><a href="https://react.docschina.org/tutorial/tutorial.html#overview" target="_blank" rel="noopener">React官方教程</a></li>
 <li><a href="http://huziketang.mangojuice.top/books/react/lesson12" target="_blank" rel="noopener">React.js小书</a></li>
 </ul>
-<ol>
-<li><p>什么是JSX<br><img src="http://ww1.sinaimg.cn/large/7f349269ly1g50bdcj2gwj20hm075aaq.jpg" alt="jsx"></p>
-</li>
-<li><p><a href="http://huziketang.mangojuice.top/books/react/lesson7" target="_blank" rel="noopener">render方法</a></p>
-</li>
-</ol>
-<ul>
+<h3 id="什么是JSX"><a href="#什么是JSX" class="headerlink" title="什么是JSX"></a>什么是JSX</h3><p><img src="http://ww1.sinaimg.cn/large/7f349269ly1g50bdcj2gwj20hm075aaq.jpg" alt="jsx"></p>
+<h3 id="render方法"><a href="#render方法" class="headerlink" title="render方法"></a><a href="http://huziketang.mangojuice.top/books/react/lesson7" target="_blank" rel="noopener">render方法</a></h3><ul>
 <li>React.js中一切皆组件。一个组件类必须要实现一个 render 方法，这个 render 方法必须要返回一个 JSX 元素。但这里要注意的是，必须要用一个外层的 JSX 元素把所有内容包裹起来。返回并列多个 JSX 元素是不合法的</li>
 <li>在 JSX 当中你可以插入 JavaScript 的表达式，表达式返回的结果会相应地渲染到页面上。表达式用 {} 包裹。<ul>
 <li>利用JSX可以增加一些逻辑性的东西，或者组合一些内容</li>
@@ -533,10 +528,7 @@
 <li>为 React 的组件添加事件监听是很简单的事情，你只需要使用 React.js 提供了一系列的 on<em> 方法即可。React.js 会给每个事件监听传入一个 <strong>event 对象</strong>，这个对象提供的功能和浏览器提供的功能一致，而且它是兼容所有浏览器的。React.js 的事件监听方法需要<strong>手动 bind 到当前实例</strong>，这种模式在 React.js 中非常常用。这些 on</em> 的事件监听只能用在普通的 HTML 的标签上，而<strong>不能用在组件标签上</strong>。</li>
 <li>bind的作用：如果你想在事件函数当中使用当前的实例，你需要手动地将实例方法 bind 到当前实例上再传入给 React.js。</li>
 </ul>
-<ol start="3">
-<li><a href="http://huziketang.mangojuice.top/books/react/lesson10" target="_blank" rel="noopener">state与props</a></li>
-</ol>
-<ul>
+<h3 id="state与props"><a href="#state与props" class="headerlink" title="state与props"></a><a href="http://huziketang.mangojuice.top/books/react/lesson10" target="_blank" rel="noopener">state与props</a></h3><ul>
 <li><strong>一个组件的显示形态是由这个组件的数据状态(state)和配置参数(props)决定的</strong></li>
 <li>state<ul>
 <li>state 的主要作用是用于组件保存、控制、修改<strong>自己的可变状态</strong>。state 在组件内部初始化，可以被组件自身修改，而<strong>外部不能访问也不能修改</strong>。你可以认为 state 是一个局部的、只能被组件自身控制的数据源。state 中状态可以通过 this.setState 方法进行更新，setState 会导致组件的重新渲染。</li>
@@ -556,10 +548,7 @@
 </ul>
 </li>
 </ul>
-<ol start="4">
-<li><a href="https://www.runoob.com/react/react-component-life-cycle.html" target="_blank" rel="noopener">React组件生命周期</a> </li>
-</ol>
-<ul>
+<h3 id="React组件生命周期"><a href="#React组件生命周期" class="headerlink" title="React组件生命周期"></a><a href="https://www.runoob.com/react/react-component-life-cycle.html" target="_blank" rel="noopener">React组件生命周期</a></h3><ul>
 <li>React<ul>
 <li>JavaScript<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">箭头函数</a></li>
 <li>bind，如果你想在事件函数当中使用当前的实例，你需要手动地将实例方法 bind 到当前实例上再传入给 React.js。 相当于通过bind(this)来完成一个绑定当前实例的工作，方便在方法内调用实例的方法以及state状态或者props</li>
@@ -591,10 +580,7 @@
 </ul>
 </li>
 </ul>
-<ol start="5">
-<li><a href="https://imweb.io/topic/5985cc4d35d7d0a321c5eb75" target="_blank" rel="noopener">React渲染机制解析</a></li>
-</ol>
-<ul>
+<h3 id="React渲染机制解析"><a href="#React渲染机制解析" class="headerlink" title="React渲染机制解析"></a><a href="https://imweb.io/topic/5985cc4d35d7d0a321c5eb75" target="_blank" rel="noopener">React渲染机制解析</a></h3><ul>
 <li>渲染过程：在页面一开始打开的时候，React会调用render函数构建一棵Dom树，在state/props发生改变的时候，render函数会被再次调用渲染出另外一棵树，接着，React会用对两棵树进行对比，找到需要更新的地方批量改动。</li>
 <li>Diff算法：Diff算法只会对同层的节点进行比较。<a href="https://leohxj.gitbooks.io/front-end-database/html-and-css-basic/learn-dom-tree.html" target="_blank" rel="noopener">DOM结构介绍</a><ul>
 <li>假设1：两个相同的组件产生类似的DOM结构，不同组件产生不同DOM结构</li>
