@@ -236,7 +236,7 @@
 
     
         <meta property="article:published_time" content="Tue Jul 23 2019 22:50:36 GMT+0800">
-        <meta property="article:modified_time" content="Tue Jul 23 2019 22:49:49 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jul 23 2019 22:53:50 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -259,7 +259,7 @@
     "mainEntityOfPage": "https://ahscuml.github.io/React入门/index.html",
     "headline": "React入门",
     "datePublished": "Tue Jul 23 2019 22:50:36 GMT+0800",
-    "dateModified": "Tue Jul 23 2019 22:49:49 GMT+0800",
+    "dateModified": "Tue Jul 23 2019 22:53:50 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ahscuml",
@@ -674,10 +674,36 @@ class LikeButton extends Component {
   }
 }
 </code></pre>
-<h4 id="如何设置默认值"><a href="#如何设置默认值" class="headerlink" title="如何设置默认值"></a>如何设置默认值</h4><p><code>`</code>javascript<br>class LikeButton extends Component {<br>  // 在这里设置默认值<br>  static defaultProps = {<br>    likedText: ‘取消’,<br>    unlikedText: ‘点赞’<br>  }</p>
-<p>  constructor () {<br>    super()<br>    this.state = { isLiked: false }<br>  }</p>
-<p>  handleClickOnLikeButton () {<br>    this.setState({<br>      isLiked: !this.state.isLiked<br>    })<br>  }</p>
-<p>  render () {<br>    return (<br>      <button onclick="{this.handleClickOnLikeButton.bind(this)}"><br>      // 设置过默认值这里就不用再进行判断了<br>        {this.state.isLiked<br>          ? this.props.likedText<br>          : this.props.unlikedText} 👍<br>      </button><br>    )<br>  }<br>}</p>
+<h4 id="如何设置默认值"><a href="#如何设置默认值" class="headerlink" title="如何设置默认值"></a>如何设置默认值</h4><pre><code class="javascript">class LikeButton extends Component {
+  // 在这里设置默认值
+  static defaultProps = {
+    likedText: &#39;取消&#39;,
+    unlikedText: &#39;点赞&#39;
+  }
+
+  constructor () {
+    super()
+    this.state = { isLiked: false }
+  }
+
+  handleClickOnLikeButton () {
+    this.setState({
+      isLiked: !this.state.isLiked
+    })
+  }
+
+  render () {
+    return (
+      &lt;button onClick={this.handleClickOnLikeButton.bind(this)}&gt;
+      // 设置过默认值这里就不用再进行判断了
+        {this.state.isLiked
+          ? this.props.likedText
+          : this.props.unlikedText} 👍
+      &lt;/button&gt;
+    )
+  }
+}
+</code></pre>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
